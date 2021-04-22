@@ -11,7 +11,7 @@
 .PL-header{
   text-align: center;
   position: relative;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2.2em;
   padding-bottom: 5px;
   
@@ -28,8 +28,8 @@
 }
 .PL-card{
   padding: 0 30px;
-  width: 350px;
-  border: 0.01em solid #999;
+  width: 340px;
+border: 1px solid #dee2e6 ;
   text-align: center;
   margin: 0 10px;
   margin-top: 150px;
@@ -42,12 +42,12 @@
 }
 .PL-hexagon-box .PL-hexagon
 {
-  width: 100px;
+  width: 95px;
   transform: translateY(-50%);
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 120px;
+  height: 110px;
   background: #51be78;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
@@ -64,17 +64,18 @@
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 .PL-card-about-text{
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 30px;
   font-weight: 300;
-  color: #808080;
+  color: #808080
 }
 .PL-card-title{
   font-size: 1.3em;
   margin: 10px 0;
-  font-weight: 300;
+  font-weight: initial;
 }
 .PL-container {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
