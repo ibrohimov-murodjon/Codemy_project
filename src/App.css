@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-head, .about-txt1, .about-txt2, .about-btn{
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.about-head{
+    color: #fff;
+    padding: 50px 30px 40px 85px;
+}
+.about-head h1{
+    display: inline-block;
+    border-bottom: 4px solid #51BE78;
+    font-weight: 400;
+    font-size: 33px;
+}
+.about-body{
+    background: #304A71;
+    padding-bottom: 50px;
+}
+.about-txt1,.about-txt2{
+    color: #7697C6;
+    font-weight: 300;
+}
+.about-txt1{
+    padding: 50px 150px 10px 35px;
+    font-size: 1.29rem;
+}
+.about-txt2{
+    padding: 10px 110px 10px 35px;
+    font-size: 1.23rem;
+}
+.about-btn{
+    color: #51be78;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    padding: 10px 50px 0px 35px;
+}
+.about-btn:hover{
+    color: #51A573;
+}
+
+/* responsive page */
+
+.about-container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "text-button"
+    ;
+    box-sizing: border-box;
+}
+.about-grid1{
+    grid-area: header;
+}
+.about-grid2{
+    grid-area: text-button;
+}
+@media screen and (min-width:990px){
+    .about-container{
+        display: grid;
+        grid-template-columns:1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header text-button"
+        ;}
+    
+}
