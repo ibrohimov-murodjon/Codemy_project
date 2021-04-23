@@ -1,10 +1,12 @@
 import "./App.css";
-import About from './Components/Home/About/About'
 
+import Home from './Page/Home/Home'
 function App() {
-  return <div>
-    <About />
-  </div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;

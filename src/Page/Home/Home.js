@@ -1,7 +1,7 @@
 import React from "react";
-
+import Proglang from "../../Components/Home/ProgLang/Proglang"
 function Home() {
-  return <div>Home</div>;
+  return <Proglang />
 }
 
 export default Home;
