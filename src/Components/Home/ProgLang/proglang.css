@@ -1,0 +1,99 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+*::selection{
+  background-color: #000;
+  color: white;
+}
+.PL-header{
+  text-align: center;
+  position: relative;
+  font-weight: 300;
+  font-size: 2.2em;
+  padding-bottom: 5px;
+  
+}
+.PL-header::after{
+  content: "";
+  position: absolute;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  background: #51be78;
+  height: 4px;
+  left: 50%;
+  bottom: 0
+}
+.PL-card{
+  padding: 0 30px;
+  width: 340px;
+border: 1px solid #dee2e6 ;
+  text-align: center;
+  margin: 0 10px;
+  margin-top: 150px;
+}
+.PL-hexagon-box{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 80px;
+}
+.PL-hexagon-box .PL-hexagon
+{
+  width: 95px;
+  transform: translateY(-50%);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  background: #51be78;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.PL-card .Pl-card-btn{
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 1.2em;
+  background: #51be78;
+  color: white;
+  text-decoration: none;
+  margin: 20px 0;
+}
+.PL-box{
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+.PL-card-about-text{
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 200;
+  color: #808080
+}
+.PL-card-title{
+  font-size: 1.3em;
+  margin: 10px 0;
+  font-weight: initial;
+}
+.PL-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 90px 0;
+}
+.PL-card .Pl-card-btn:hover{
+  transition: .5s;
+  background: #2ca24f;
+} 
+@media (max-width: 755px){
+.PL-card{
+  width: 100%;
+}
+.PL-box{
+  padding: 0 20px;
+}
+}
+.PL-icon{
+  font-size: 60px !important;  
+  color: white;
+}

@@ -1,12 +1,9 @@
 import "./App.css";
-import Staffs from "./Components/Home/Staffs/Staffs";
-import Footer from "./Components/Home/Footer/Footer";
-import "./App.css";
+import Home from './Page/Home/Home'
 function App() {
   return (
     <div>
-      <Staffs />
-      <Footer />
+      <Home />
     </div>
   );
 }
