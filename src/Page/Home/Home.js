@@ -7,7 +7,7 @@ import Carousel from '../../Components/Home/Corusel/Carosuel'
 function Home() {
   return (
     <>
-    <Carousel/>
+      <Carousel/>
       <Proglang />
       <About />
       <Staffs />
