@@ -4,6 +4,7 @@ import Staffs from "../../Components/Home/Staffs/Staffs";
 import Footer from "../../Components/Home/Footer/Footer";
 import About from "../../Components/Home/About/About";
 import Carousel from '../../Components/Home/Corusel/Carosuel'
+import Aforizms from '../../Components/Home/Aforizms/Aforizms'
 function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ function Home() {
       <Proglang />
       <About />
       <Staffs />
+      <Aforizms/>
       <Footer />
     </>
   );
