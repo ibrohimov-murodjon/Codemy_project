@@ -5,17 +5,19 @@ import Footer from "../../Components/Home/Footer/Footer";
 import About from "../../Components/Home/About/About";
 import Carousel from '../../Components/Home/Corusel/Carosuel'
 import Aforizms from '../../Components/Home/Aforizms/Aforizms'
+import Navbar from "../../Components/Home/Navbar/Navbar"
 
 function Home() {
   return (
-    <>
+    <div>
+      <Navbar home="active" />
       <Carousel/>
       <Proglang />
       <About />
       <Staffs />
       <Aforizms/>
       <Footer />
-    </>
+    </div>
   );
 }
 
