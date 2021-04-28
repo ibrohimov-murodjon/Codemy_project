@@ -9,7 +9,6 @@
     color: #fff;
     padding: 50px 20px 10px 20px;
     min-width: 287px;  
-    transition: 2s;
 }
 .about-head span{
     display: inline-block;
@@ -17,7 +16,6 @@
     font-weight: 500;
     font-size: 33px;
     padding: 10px auto;
-    transition: 2s;
 }
 .about-body{
     background: #304A71;
@@ -33,7 +31,6 @@
     letter-spacing: .5px;
     line-height: 35px;
     min-width: 460px;
-    transition: 2s;
 }
 .about-txt2{
     padding: 10px auto;
@@ -41,7 +38,6 @@
     word-spacing: 2px;
     line-height: 30px;
     min-width: 460px;
-    transition: 2s;
 }
 .about-text{
     padding: 10px 20px 10px 20px;
@@ -55,7 +51,6 @@
     font-size: 17.6px;
     padding: 10px auto;
     margin: 0 20px;
-    transition: 2s;
 }
 .about-btn:hover{
     color: #51A573;
