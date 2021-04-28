@@ -1,0 +1,7 @@
+.carouselMainContainer{
+    background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: content-box;
+    height: 100vh;
+}

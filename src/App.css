@@ -3,33 +3,22 @@
   padding: 0;
 }
 
-.carouselMainContainer {
-  height: 100%;
-  width: 100%;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center;
-}
+
 .caruselTitle {
   display: flex;
   align-content: center;
   position: absolute;
   font-size: 7rem;
-  font-weight: bold;
   justify-content: center;
   text-transform: capitalize;
-  top: 220px;
+  top: 250px;
   color: white;
 }
 .carH3 {
   text-align: center;
   width: 75%;
+  font-weight: 900;
   color: white;
-}
-.caruselImg {
-  filter: brightness(50%);
-  height: 850px;
-  width: 100%;
 }
 
 @media screen and (max-width: 1290px) {
@@ -37,11 +26,11 @@
     display: flex;
     align-content: center;
     position: absolute;
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: bold;
     justify-content: center;
     text-transform: capitalize;
-    top: 180px;
+    top: 280px;
     color: white;
   }
   .carH3 {
@@ -61,11 +50,11 @@
     display: flex;
     align-content: center;
     position: absolute;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     justify-content: center;
     text-transform: capitalize;
-    top: 180px;
+    top: 300px;
     color: white;
   }
   .carH3 {
