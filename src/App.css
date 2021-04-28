@@ -8,10 +8,10 @@
   display: flex;
   align-content: center;
   position: absolute;
-  font-size: 7rem;
+  font-size: 6rem;
   justify-content: center;
   text-transform: capitalize;
-  top: 250px;
+  top: 160px;
   color: white;
 }
 .carH3 {

@@ -12,10 +12,10 @@ class Carousel extends React.Component {
     this.state = {
       items: [
         <div key={1} >
-          <CarouselItem  title="acdemics  university" img="/images/hero_1.jpg" />
+          <CarouselItem  title="acdemics  university" />
         </div>,
         <div key={2} >
-             <CarouselItem  title="you can learn anything" img="/images/hero_1.jpg"  />
+             <CarouselItem  title="you can learn anything"  />
         </div>,
        
       ],
