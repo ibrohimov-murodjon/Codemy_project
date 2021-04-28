@@ -1,24 +1,18 @@
 import React from "react";
 import "../../../../App.css";
-
+import './Carousel.css'
 
 function CarouselItem(props) {
 
   return (
-    <div className="carouselMainContainer">
+    <div className="carouselMainContainer"> 
       <div
-        className=""
+
         style={{
           display: "flex",
           justifyContent: "center",
         }}
       >
-        <img
-          src={props.img}
-          alt=""
-          className="caruselImg"
-         
-        />
         <div
         className="caruselTitle"
         >
