@@ -10,17 +10,17 @@ function Aforizms() {
     <div className='aforizmWrapper'>
       
       <div className='aforow row1'>
-        <SchoolIcon style={{color: '#51BE78'}} className='aforizmIcon' />
+        <img src='/images/cap.png' alt='grad_hat' className='aforizmIcon' />
         <AforizmsCont title='Our Philosphy' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.' />
       </div>
 
       <div className='aforow row2'>
-        <ImportContactsIcon style={{color: '#51BE78'}} className='aforizmIcon' />
+      <img src='/images/tools.png' alt='tools' className='aforizmIcon' />
         <AforizmsCont title='Academics Principle' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.' />
       </div>
 
       <div className='aforow row3'>
-        <AccountBalanceIcon style={{color: '#51BE78'}} className='aforizmIcon' />
+      <img src='/images/university.png' alt='university' className='aforizmIcon' />
         <AforizmsCont title='Key of Success' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.' />
       </div>
 
