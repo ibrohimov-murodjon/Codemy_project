@@ -6,8 +6,8 @@ import About from "./Page/About/About";
 function App() {
   return (
     <div>
-      <Home />
-      {/* <About/> */}
+      {/* <Home /> */}
+      <About />
     </div>
   );
 }
