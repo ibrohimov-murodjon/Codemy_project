@@ -88,7 +88,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
               color="#fff"
               aria-label="open drawer"
             >
-              <img src="./img/logo.jpg" alt="Logo" />
+              <img src="./images/logonav.jpg" alt="Logo" />
             </IconButton>
 
             <Typography variant="h6" noWrap>
