@@ -1,4 +1,5 @@
 import "./App.css";
+import Home from "./Page/Home/Home";
 
 import Home from "./Page/Home/Home";
 import About from "./Page/About/About";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/courses" component={Courses} />
         <Route path="/contact" component={Contact} /> */}
       </Switch>
+
     </div>
   );
 }
