@@ -1,76 +1,148 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.about-head, .about-txt1, .about-txt2, .about-btn{
-    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+.caruselTitle {
+  display: flex;
+  align-content: center;
+  position: absolute;
+  font-size: 6rem;
+  justify-content: center;
+  text-transform: capitalize;
+  top: 160px;
+  color: white;
 }
-.about-head{
-    color: #fff;
-    padding: 50px 30px 40px 85px;
+.carH3 {
+  text-align: center;
+  width: 75%;
+  font-weight: 900;
+  color: white;
 }
-.about-head h1{
-    display: inline-block;
-    border-bottom: 4px solid #51BE78;
-    font-weight: 400;
-    font-size: 33px;
+
+@media screen and (max-width: 1290px) {
+  .caruselTitle {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    font-size: 7rem;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: capitalize;
+    top: 280px;
+    color: white;
+  }
+  .carH3 {
+    text-align: center;
+    width: 75%;
+    color: white;
+  }
+  .caruselImg {
+    filter: brightness(50%);
+    height: 650px;
+    width: 100%;
+  }
 }
-.about-body{
-    background: #304A71;
-    padding-bottom: 50px;
+
+@media screen and (max-width: 950px) {
+  .caruselTitle {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: capitalize;
+    top: 300px;
+    color: white;
+  }
+  .carH3 {
+    text-align: center;
+    width: 75%;
+    color: white;
+  }
+  .caruselImg {
+    filter: brightness(50%);
+    height: 500px;
+    width: 100%;
+  }
 }
-.about-txt1,.about-txt2{
-    color: #7697C6;
-    font-weight: 300;
+
+.about-head,
+.about-txt1,
+.about-txt2,
+.about-btn {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
-.about-txt1{
-    padding: 50px 150px 10px 35px;
-    font-size: 1.29rem;
+.about-head {
+  color: #fff;
+  padding: 50px 30px 40px 85px;
 }
-.about-txt2{
-    padding: 10px 110px 10px 35px;
-    font-size: 1.23rem;
+.about-head h1 {
+  display: inline-block;
+  border-bottom: 4px solid #51be78;
+  font-weight: 400;
+  font-size: 33px;
 }
-.about-btn{
-    color: #51be78;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    font-size: 1.25rem;
-    padding: 10px 50px 0px 35px;
+.about-body {
+  background: #304a71;
+  padding-bottom: 50px;
 }
-.about-btn:hover{
-    color: #51A573;
+.about-txt1,
+.about-txt2 {
+  color: #7697c6;
+  font-weight: 300;
+}
+.about-txt1 {
+  padding: 50px 150px 10px 35px;
+  font-size: 1.29rem;
+}
+.about-txt2 {
+  padding: 10px 110px 10px 35px;
+  font-size: 1.23rem;
+}
+.about-btn {
+  color: #51be78;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+  padding: 10px 50px 0px 35px;
+}
+.about-btn:hover {
+  color: #51a573;
 }
 
 /* responsive page */
 
-.about-container{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
     "header"
-    "text-button"
-    ;
-    box-sizing: border-box;
+    "text-button";
+  box-sizing: border-box;
 }
-.about-grid1{
-    grid-area: header;
+.about-grid1 {
+  grid-area: header;
 }
-.about-grid2{
-    grid-area: text-button;
+.about-grid2 {
+  grid-area: text-button;
 }
-@media screen and (min-width:990px){
-    .about-container{
-        display: grid;
-        grid-template-columns:1fr 2fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "header text-button"
-        ;}
-    
+@media screen and (min-width: 990px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header text-button";
+  }
 }
+
+/* Staff Part */
 
 * {
   margin: 0;
@@ -82,35 +154,33 @@
   background: #ffffff;
   padding: 2.5em;
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-*::selection {
-  color: white;
-  background: #000;
-}
 .staffheader {
   font-size: 2rem;
   display: inline-block;
   border-bottom: 4px solid #51be78;
   color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Open Sans", "Helvetica Neue", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: 60px;
   padding-top: 30px;
+  margin-left: 3%;
 }
 .staffName {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 0;
   color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Segoe UI",
-    Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
+    "Helvetica Neue", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif, Arial, Helvetica, sans-serif;
   user-select: none;
+  font-weight: 400;
 }
 .staffDesgn {
   user-select: none;
@@ -133,7 +203,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Segoe UI",
     Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
-  width: 80%;
+  width: 90%;
 }
 .staffhhhh {
   -webkit-box-align: center !important;
@@ -231,5 +301,117 @@
   .item {
     display: flex;
     padding-bottom: 20px;
+  }
+}
+
+/* Aforizm */
+.aforizmContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(24, 54, 97, 0.9);
+  z-index: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.aforizmContainer {
+  position: relative;
+  background-image: url("./Components/Home/Aforizms/hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  padding: 5rem 0;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.aforizmContainer.aforStyle-1 > .aforizmWrapper {
+  z-index: 2;
+}
+
+.aforizmWrapper {
+  line-height: 1.8;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aforow {
+  width: 500px;
+  padding: 0 15px 0 15px;
+}
+
+.aforizmIcon {
+  font-size: 65px !important;
+  width: 60px;
+}
+
+.afoTitle {
+  color: #51be78;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 1.11rem;
+}
+
+.afoText {
+  color: #7697c6;
+  font-family: 'Mulish', "Roboto", sans-serif;
+  font-weight: 300 !important;
+  font-size: 20px;
+  line-height: 34px;
+  width: 350px;
+  padding-top: 20px;
+  /* letter-spacing: 1.001px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .afoText {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .aforizmWrapper {
+    line-height: 1.7;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .aforow {
+    width: 360px;
+    padding: 0 15px 90px 15px;
+  }
+  .afoText {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aforizmWrapper {
+    line-height: 1.7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aforow {
+    min-width: 540px;
+    padding: 0 15px 90px 15px;
+  }
+  .afoText {
+    width: 453px;
   }
 }

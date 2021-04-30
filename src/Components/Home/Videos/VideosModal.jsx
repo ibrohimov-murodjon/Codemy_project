@@ -17,7 +17,6 @@ const VideosModal = ({ setShow, show, handleClick, handleClose }) => {
         open={show}
         style={{ border: "none", outline: "none" }}
         closeAfterTransition
-        // BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
         }}
