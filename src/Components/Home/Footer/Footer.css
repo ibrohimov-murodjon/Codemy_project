@@ -5,19 +5,19 @@
 }
 .footer {
   line-height: 1.7;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Segoe UI",
-    Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif, "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif;
   width: 100%;
   color: gray;
   text-align: left;
   background: #183661;
   padding: 4rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 200;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 320;
 }
 .firstColumn {
   position: relative;
@@ -99,12 +99,17 @@ a {
   font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
+  font-weight: 420;
 }
 
 .footer .copyright {
   color: #fff;
-  padding-top: 7rem;
+  padding-top: 5rem;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, Arial,
+    Helvetica, sans-serif, serif;
+  font-weight: 350;
 }
 .madeBy {
   width: 100%;
@@ -116,6 +121,12 @@ a {
 }
 
 @media screen and (max-width: 730px) {
+  .footer .footer-heading {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 420;
+  }
   .firstColumn,
   .secondColumn {
     position: relative;
@@ -146,6 +157,12 @@ a {
 }
 
 @media screen and (max-width: 560px) {
+  .footer .footer-heading {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 420;
+  }
   .firstColumn,
   .secondColumn {
     position: relative;
