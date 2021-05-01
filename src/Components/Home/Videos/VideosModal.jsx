@@ -3,7 +3,6 @@ import React from "react";
 import "./Videos.css";
 import CloseIcon from "@material-ui/icons/Close";
 import Backdrop from "@material-ui/core/Backdrop";
-
 const VideosModal = ({ setShow, show, handleClick, handleClose }) => {
   const onclose = () => {
     setShow(false);

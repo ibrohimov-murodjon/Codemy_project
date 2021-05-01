@@ -26,7 +26,7 @@ function Videos() {
               <div className="Videos-head-news">
                 <span className="dark"></span>
                 <img
-                  src="./images/blog_large_1.jpg"
+                  src="./images/bg_1.jpg"
                   className="Videos-news-img"
                 />
               </div>
@@ -65,7 +65,7 @@ function Videos() {
         </div>
       </div>
       <div className="material-videos">
-        <div className="material-videos-title">
+        <div className="Videos-News-link">
           <h1>Videodarslar</h1>
           <a href="#" className>
             View All Videos
