@@ -2,7 +2,7 @@ import React from "react";
 import Aforizms from "../../Components/Home/Aforizms/Aforizms";
 import Footer from "../../Components/Home/Footer/Footer";
 import TopImage from "../../Components/TopImage/TopImage";
-
+import OurTeachers from "../../Components/About/AboutTeachers/AboutTeachers" 
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
 import AkademicsHistory from "../../Components/AboutUS/AkademicsHistory/AkdemicsHis";
 
@@ -22,7 +22,7 @@ function About() {
       {/* menucha */}
       {/* Why Academics Works */}
       <Aforizms />
-      {/* Our Teachers */}
+      <OurTeachers />   
       <Footer />
     </div>
   );

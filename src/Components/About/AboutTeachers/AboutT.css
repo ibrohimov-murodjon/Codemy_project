@@ -61,16 +61,16 @@ border: 1px solid #dee2e6 ;
   font-size: 17px;
   line-height: 30px;
   font-weight: 200;
-  color: #808080
+  color: #707070
 }
 .At-card-title{
   font-size: 1.3em;
   margin: 10px 0;
-  font-weight: initial;
+  font-weight: 400;
 }
 .At-container {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 90px 0;
+  padding: 50px 0;
 }
 @media (max-width: 1000px){
   .At-card{
@@ -89,4 +89,7 @@ border: 1px solid #dee2e6 ;
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+span.At-card-about-text{
+  line-height: 40px
 }
