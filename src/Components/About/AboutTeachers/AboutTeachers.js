@@ -7,6 +7,7 @@ function AboutTeachers() {
     <div className="At-container">
       <h1 className="At-header">Our Teachers</h1>
       <div className="At-box">
+        
         {AtData.map((data, id)=>(
           <Atcomponent key={id} title={data.title} titleBottom={data.titleBottom} descibetion={data.descipetion} imguri={data.imguri} />
         ))}
