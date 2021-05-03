@@ -3199,7 +3199,7 @@
     navClass: ["owl-prev", "owl-next"],
     slideBy: 1,
     dotClass: "owl-dot",
-    dotsClass: "owl-dots",
+    dotsClass: "owl-dots3",
     dots: true,
     dotsEach: false,
     dotsData: false,

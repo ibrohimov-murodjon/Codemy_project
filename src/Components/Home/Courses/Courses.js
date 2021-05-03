@@ -1,9 +1,6 @@
 import React from "react";
 import CourseList from "./components/CoursesList";
-// import { Data } from "./components/Data";
 import OwlCarousel from "react-owl-carousel2";
-import ArrowBack from "@material-ui/icons/ArrowBack";
-import ArrowForward from "@material-ui/icons/ArrowForward";
 import "./components/index.css";
 import "./js/owl.theme.default.css";
 import "./js/owl.carousel.css";
@@ -16,23 +13,23 @@ class Courses extends React.Component {
     this.state = {
       size: window.innerWidth,
       items: [
-        <div className="course-courses" key={1}>
-          {/* {Data.map((data) => {
-            return <CourseList {...data} key={data.id} />;
-          })} */}
-          <CourseList img="./images/course_2.jpg" />
-        </div>,
-        <div className="course-courses" key={2}>
+        <div className="owl-item" key={1}>
           <CourseList img="./images/course_1.jpg" />
         </div>,
-        <div className="course-courses" key={3}>
+        <div className="owl-item" key={2}>
+          <CourseList img="./images/course_2.jpg" />
+        </div>,
+        <div className="owl-item" key={3}>
           <CourseList img="./images/course_3.jpg" />
         </div>,
-        <div className="course-courses" key={4}>
+        <div className="owl-item" key={4}>
           <CourseList img="./images/course_4.jpg" />
         </div>,
-        <div className="course-courses" key={5}>
+        <div className="owl-item" key={5}>
           <CourseList img="./images/course_5.jpg" />
+        </div>,
+        <div className="owl-item" key={6}>
+          <CourseList img="./images/course_6.jpg" />
         </div>,
       ],
 
@@ -40,9 +37,10 @@ class Courses extends React.Component {
       loop: true,
       nav: true,
       navText: [
-        "<i class='fa fa-arrow-left'></i>",
+        "<i class='fa fa-arrow-left salom' ></i>",
         "<i class='fa fa-arrow-right'></i>",
       ],
+      dotsClass: "owl-dots3",
       rewind: true,
       autoplay: true,
     };
@@ -50,14 +48,13 @@ class Courses extends React.Component {
 
   checkSize = () => {
     this.setState({ ...this.state, size: window.innerWidth });
-    // console.log(this.state);
-    if (1100 < this.state.size) {
+    if (this.state.size < 2000) {
       this.setState({ ...this.state, itemNo: 3 });
     }
-    if (this.state.size < 1024) {
+    if (this.state.size < 1202) {
       this.setState({ ...this.state, itemNo: 2 });
     }
-    if (this.state.size < 620) {
+    if (this.state.size < 700) {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };
@@ -76,6 +73,7 @@ class Courses extends React.Component {
       items: this.state.itemNo,
       loop: this.state.loop,
       nav: this.state.nav,
+      dotsClass: this.state.dotsClass,
       navText: this.state.navText,
       rewind: this.state.rewind,
       autoplay: this.state.autoplay,
@@ -99,6 +97,10 @@ class Courses extends React.Component {
           <h2 className="section-title-underline">
             <span className="course-span">Kurslar</span>
           </h2>
+          <p className="course-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+            id?
+          </p>
         </div>
         <OwlCarousel ref="car" options={options} events={events}>
           {this.state.items}
@@ -107,22 +109,5 @@ class Courses extends React.Component {
     );
   }
 }
-
-// function Courses() {
-//   return (
-//     <>
-//       <div className="course-kurslar">
-//         <h2 className="section-title-underline">
-//           <span className="course-span"> Kurslar</span>
-//         </h2>
-//       </div>
-//       <div className="course-courses">
-//         {Data.map((data) => {
-//           return <CourseList {...data} key={data.id} />;
-//         })}
-//       </div>
-//     </>
-//   );
-// }
 
 export default Courses;
