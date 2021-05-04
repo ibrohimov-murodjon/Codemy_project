@@ -75,7 +75,6 @@ export default function Navbar({ home, about, admission, contact, courses }) {
         style={{
           display: "flex",
           backgroundColor: "white",
-          boxShadow: "0 0 0",
           justifyContent: "space-between !important",
         }}
         position="fixed"

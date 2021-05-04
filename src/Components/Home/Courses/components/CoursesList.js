@@ -39,7 +39,7 @@ function CoursesList(props) {
           />
           <CardContent className="course-category">
             <h2 className="course-price">
-              <span>$ 99</span>
+              <span>$ 99.00</span>
             </h2>
             <Typography
               gutterBottom
@@ -51,11 +51,10 @@ function CoursesList(props) {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <div>
-          <Typography className="course-additTitle" variant="h5">
+        <div className="course-1-content">
+          <h2 className="course-additTitle">
             How To Create Mobile Apps Using Ionic
-            {/* {additTitle} */}
-          </Typography>
+          </h2>
           <Rating
             value={5}
             max={5}
@@ -63,7 +62,7 @@ function CoursesList(props) {
             readOnly
             className="course-rating"
           />
-          <Typography variant="h6" className="course-text">
+          <Typography variant="p" className="course-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
             accusantium ipsam.
             {/* {text} */}

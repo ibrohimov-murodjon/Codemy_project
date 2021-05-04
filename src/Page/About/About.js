@@ -5,6 +5,7 @@ import TopImage from "../../Components/TopImage/TopImage";
 import OurTeachers from "../../Components/AboutUS/AboutTeachers/AboutTeachers" 
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
 import AkademicsHistory from "../../Components/AboutUS/AkademicsHistory/AkdemicsHis";
+import Info from '../../Components/AboutUS/InfoAcademics/InfoAcademics';
 
 function About() {
   return (
@@ -20,6 +21,8 @@ function About() {
       <MenuBar currentPath="About Us" />
       <AkademicsHistory />
       {/* menucha */}
+      {/* Why Academics Works */}
+      <Info />
       {/* Why Academics Works */}
       <Aforizms />
       <OurTeachers />   
