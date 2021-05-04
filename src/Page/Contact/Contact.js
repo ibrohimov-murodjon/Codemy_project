@@ -4,29 +4,24 @@ import Footer from "../../Components/Home/Footer/Footer";
 import TopImage from "../../Components/TopImage/TopImage";
 import OurTeachers from "../../Components/About/AboutTeachers/AboutTeachers";
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
-import AkademicsHistory from "../../Components/AboutUS/AkademicsHistory/AkdemicsHis";
-import Info from "../../Components/AboutUS/InfoAcademics/InfoAcademics";
+
+import ContactForm from "../../Components/Contact/ContactForm";
 
 import Navbar from "../../Components/Home/Navbar/Navbar";
 
 function About() {
   return (
-    <div>
-      <Navbar about="Nactive" />
-      {/* navbar */}
-      {/* divImage */}
+    <div style={{ paddingTop: "70.4px" }}>
+      <Navbar contact="Nactive" />
       <TopImage
-        heading="About Us"
+        heading="Contact"
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."
       />
-      {/* divImage */}
-      {/* menucha */}
-      <MenuBar currentPath="About Us" />
-      <AkademicsHistory />
-      {/* menucha */}
-      {/* Why Academics Works */}
-      <Info />
-      {/* Why Academics Works */}
+
+      <MenuBar currentPath="Contact" />
+
+      <ContactForm />
+
       <Aforizms />
       <OurTeachers />
       <Footer />
