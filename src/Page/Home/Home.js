@@ -20,7 +20,6 @@ function Home() {
       <Staffs />
       <Aforizms />
       <Footer />
-
     </div>
   );
 }

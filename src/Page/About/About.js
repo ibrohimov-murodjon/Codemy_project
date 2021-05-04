@@ -2,9 +2,10 @@ import React from "react";
 import Aforizms from "../../Components/Home/Aforizms/Aforizms";
 import Footer from "../../Components/Home/Footer/Footer";
 import TopImage from "../../Components/TopImage/TopImage";
-
+import OurTeachers from "../../Components/About/AboutTeachers/AboutTeachers" 
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
 import AkademicsHistory from "../../Components/AboutUS/AkademicsHistory/AkdemicsHis";
+import Info from '../../Components/AboutUS/InfoAcademics/InfoAcademics';
 
 function About() {
   return (
@@ -21,8 +22,10 @@ function About() {
       <AkademicsHistory />
       {/* menucha */}
       {/* Why Academics Works */}
+      <Info />
+      {/* Why Academics Works */}
       <Aforizms />
-      {/* Our Teachers */}
+      <OurTeachers />   
       <Footer />
     </div>
   );
