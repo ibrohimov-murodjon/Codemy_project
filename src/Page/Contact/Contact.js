@@ -2,7 +2,7 @@ import React from "react";
 import Aforizms from "../../Components/Home/Aforizms/Aforizms";
 import Footer from "../../Components/Home/Footer/Footer";
 import TopImage from "../../Components/TopImage/TopImage";
-import OurTeachers from "../../Components/About/AboutTeachers/AboutTeachers";
+
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
 
 import ContactForm from "../../Components/Contact/ContactForm";
@@ -23,7 +23,7 @@ function About() {
       <ContactForm />
 
       <Aforizms />
-      <OurTeachers />
+
       <Footer />
     </div>
   );

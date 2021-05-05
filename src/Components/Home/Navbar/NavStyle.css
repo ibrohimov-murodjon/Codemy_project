@@ -34,7 +34,14 @@
 }
 
 .Nactive {
+  font-weight: 300;
   color: #51be78;
+  font-size: 19px;
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+  /* 
   font-size: 19px;
   font-weight: 300;
   transition: color 0.5s;
@@ -42,12 +49,15 @@
   text-decoration: none;
   margin: 10px;
   padding-top: 10px;
+  padding-left: 8px; */
 }
 
 .NavIcon {
   background-color: #51be78;
   color: white;
+  margin-top: 12px !important;
   margin: 2px;
+  height: 40px !important;
   transition: 0.5s;
   border: none;
   padding: 7px;
@@ -58,7 +68,8 @@
 }
 
 .NavMenu {
-  display: none;
+  display: flex;
+  justify-content: center;
 }
 
 .Tool-Bar {
@@ -68,8 +79,28 @@
 }
 
 .BigDiv {
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   justify-content: "space-between";
+  font-size: 17px;
+}
+
+.barDivmarg {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .barDivmarg {
+    width: 180px;
+  }
+}
+
+@media (max-width: 960px) {
+  .barDivmarg {
+    width: 500px;
+  }
 }
