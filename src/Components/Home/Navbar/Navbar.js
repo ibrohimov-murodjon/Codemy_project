@@ -17,10 +17,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles((theme) => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-
   inputRoot: {
     color: "red",
   },
@@ -76,18 +72,16 @@ export default function Navbar({ home, about, admission, contact, courses }) {
           display: "flex",
           backgroundColor: "white",
           justifyContent: "space-between !important",
+          boxShadow: "0 8px 6px -6px #ddd",
         }}
         position="fixed"
       >
         <Toolbar className="Tool-Bar">
           <div className="link-bar">
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="#fff"
-              aria-label="open drawer"
-            >
-              <img src="./images/logonav.jpg" alt="Logo" />
+            <IconButton disabled="folse">
+              <Link to="/">
+                <img src="./images/logonav.jpg" alt="Logo" />
+              </Link>
             </IconButton>
 
             <Typography variant="h6" noWrap>

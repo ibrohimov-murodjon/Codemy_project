@@ -5,11 +5,14 @@ import TopImage from "../../Components/TopImage/TopImage";
 import OurTeachers from "../../Components/AboutUS/AboutTeachers/AboutTeachers" 
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
 import AkademicsHistory from "../../Components/AboutUS/AkademicsHistory/AkdemicsHis";
-import Info from '../../Components/AboutUS/InfoAcademics/InfoAcademics';
+import Info from "../../Components/AboutUS/InfoAcademics/InfoAcademics";
+
+import Navbar from "../../Components/Home/Navbar/Navbar";
 
 function About() {
   return (
     <div>
+      <Navbar about="Nactive" />
       {/* navbar */}
       {/* divImage */}
       <TopImage
@@ -25,7 +28,7 @@ function About() {
       <Info />
       {/* Why Academics Works */}
       <Aforizms />
-      <OurTeachers />   
+      <OurTeachers />
       <Footer />
     </div>
   );
