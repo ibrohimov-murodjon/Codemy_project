@@ -83,6 +83,8 @@
   .owl-carousel.owl-rtl .owl-item {
     float: right; }
 
+    
+
 /* No Js */
 .no-js .owl-carousel {
   display: block; }
