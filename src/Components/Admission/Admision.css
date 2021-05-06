@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,300&display=swap');
+.containerAdmission{
+     width: 80%;
+     padding: 88px 0;
+     margin: 0 auto;
+     /* border: 1px solid red; */
+    
+}
+.addHeaderTit1{
+    font-family: 'Mulish', sans-serif;
+    padding-left: 15%;
+}
+.addHeaderTit{
+    font-family: 'Mulish', sans-serif;
+    /* padding-left: 15%;    */
+
+}
+
+
+.admisionFlexBox{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.addHeaderTit  .title{
+    border-bottom: 4px solid #51be78 ;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+.addHeaderTit1  .title{
+    border-bottom: 4px solid #51be78 ;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+.title{
+    line-height: 1.2;
+    text-align: left;
+}
+.addTit1{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: gray; margin-top: 55px;
+}
+
+.addTit{
+    margin-bottom: 1rem;
+    text-align:left;
+    line-height: 1.5;
+    margin-top: 2rem;
+    color: gray;
+}
+.mediaImage{
+    width:580px;
+    height:400px
+}
+.mediaIamge2{
+    width:580px;
+    height:400px
+}
+.addFlex{
+    display: flex;
+    justify-content: start;
+}
+
+.checkTitle{
+    margin-top: 5px;
+    margin-left: 18px;
+    font-size: 1.25rem;
+    font-family: 'Mulish', sans-serif;
+    color: gray;
+}
+
+
+
+
+@media screen and (max-width: 1125px) {
+    .admisionFlexBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .mediaImage{
+        width: 80%;
+        display: flex;
+        padding: 2% 0%;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .mediaIamge2{
+        width: 80%;
+        display: flex;
+        padding: 2% 0%;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .addHeaderTit{
+      width: 70%;
+      margin: 0 auto; 
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .admisionFlexBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mediaImage{
+        width: 85%;
+        height: 300px;
+        display: flex;
+        padding: 2% 0%;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .mediaImage{
+        width: 85%;
+        height: 300px;
+        display: flex;
+        padding: 2% 0%;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .addHeaderTit{
+        padding-left: 0%;
+        font-size: 1rem;
+    }
+    .paddingRightAdd{
+        padding-right: 0%;
+     }
+}

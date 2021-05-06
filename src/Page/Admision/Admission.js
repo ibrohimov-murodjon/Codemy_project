@@ -1,25 +1,23 @@
 import React from "react";
-import CourseInfo from "../../Components/Courses/CoursesInfo/CoursesInfo";
 import TopImage from "../../Components/TopImage/TopImage";
 import MenuBar from "../../Components/MenuBar/MiddleMenu";
 import Footer from "../../Components/Home/Footer/Footer";
-import Aforizms from "../../Components/Home/Aforizms/Aforizms";
+import AdmissionList from "../../Components/Admission/AddmisionList";
 import Navbar from "../../Components/Home/Navbar/Navbar";
-
-function Courses() {
+const Admission = () => {
   return (
     <div>
-      <Navbar home="HomeNoactive" courses="Nactive" />
+      <Navbar home="HomeNoactive" admission="Nactive" />
       <TopImage
-        heading="Courses"
+        heading="Admission"
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."
       />
-      <MenuBar currentPath="Courses" />
-      <CourseInfo /> <br /> <br /> <br /> <br /> <br /> <br />
-      <Aforizms />
+
+      <MenuBar currentPath="Admission" />
+      <AdmissionList />
       <Footer />
     </div>
   );
-}
+};
 
-export default Courses;
+export default Admission;
