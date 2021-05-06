@@ -86,20 +86,20 @@ export default function Navbar({ home, about, admission, contact, courses }) {
 
             <Typography variant="h6" noWrap>
               <div className={classes.sectionDesktop}>
-                <Link className="LinkBar" to="/" class={home}>
-                  Home
+                <Link className="Nactive" to="/" class={home}>
+                  <p className="navFontST">Home</p>
                 </Link>
                 <Link className="LinkBar" to="/about" class={about}>
-                  About Us
+                  <p className="navFontST"> About Us</p>
                 </Link>
                 <Link className="LinkBar" to="/admission" class={admission}>
-                  Admission
+                  <p className="navFontST"> Admission</p>
                 </Link>
                 <Link className="LinkBar" to="/courses" class={courses}>
-                  Courses
+                  <p className="navFontST"> Courses</p>
                 </Link>
                 <Link className="LinkBar" to="/contact" class={contact}>
-                  Contact
+                  <p className="navFontST"> Contact</p>
                 </Link>
               </div>
             </Typography>

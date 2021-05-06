@@ -7,7 +7,7 @@ import Navbar from "../../Components/Home/Navbar/Navbar";
 const Admission = () => {
   return (
     <div>
-      <Navbar admission="Nactive" />
+      <Navbar home="HomeNoactive" admission="Nactive" />
       <TopImage
         heading="Admission"
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."
