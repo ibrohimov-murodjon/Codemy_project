@@ -1,0 +1,125 @@
+.LinkBar {
+  justify-content: center;
+  display: flex;
+  padding: 20px 10px;
+}
+
+.LinkBar .active {
+  color: #51be78;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.bar li {
+  padding: 0px 25px;
+}
+
+.LinkBar {
+  font-weight: 300;
+  color: black;
+  font-size: 19px;
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+}
+.link-bar {
+  display: flex;
+  justify-content: "space-between";
+}
+.LinkBar:hover {
+  color: #51be78;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.Nactive {
+  font-weight: 300;
+  color: #51be78;
+  font-size: 19px;
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.HomeNoactive {
+  font-weight: 300;
+  color: black;
+  font-size: 19px;
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.NavIcon {
+  background-color: #51be78;
+  color: white;
+  margin-top: 12px !important;
+  margin: 2px;
+  height: 40px !important;
+  transition: 0.5s;
+  border: none;
+  padding: 7px;
+}
+
+.NavIcon:hover {
+  background: #000;
+}
+
+.NavMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.Tool-Bar {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-around;
+}
+
+.navFontST {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 17.6px;
+  margin: 0;
+  padding: 0;
+}
+
+.barDivmarg {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-end;
+  width: 373px;
+}
+
+@media (max-width: 1200px) {
+  .barDivmarg {
+    width: 180px;
+  }
+}
+
+@media (max-width: 960px) {
+  .barDivmarg {
+    width: 500px;
+  }
+}
+
+@media (max-width: 760px) {
+  .barDivmarg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .link-bar {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .barDivmarg {
+    width: 100%;
+  }
+}
