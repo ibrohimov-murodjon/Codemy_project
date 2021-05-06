@@ -3,9 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.owl-prev {
+  top: 45% !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+.owl-next {
+  top: 45% !important;
+  height: 40px !important;
+  width: 40px !important;
+}
 .course-container {
-  padding-left: 7.5%;
+  padding-left: 7%;
   padding-right: 7%;
+  margin-top: 2rem;
   background: #ffffff;
   align-items: center;
   display: flex;
@@ -54,11 +65,11 @@
 .course-root {
   width: 350px;
   margin-top: 10px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   text-align: center;
-  display: block;
   position: relative;
-  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+  background: black;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.15) !important;
 }
 .owl-item {
   transform: translate3d(-1050px, 0px, 0px);
@@ -76,30 +87,33 @@
   max-width: 100%;
   border-style: none;
 }
-.owl-prev {
+.course-prev {
   position: absolute;
-  top: 45%;
-  width: 40px;
-  height: 30px;
+  top: 50%;
+  width: 45px;
+  height: 20px;
   text-align: center;
   transform: translateY(-50%);
-  background: green;
   cursor: pointer;
   left: 0;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #888a88;
 }
-.owl-next {
+.course-next {
   position: absolute;
   right: 0;
-  top: 45%;
-  width: 40px;
+  top: 70%;
+  width: 45px;
   height: 30px;
   text-align: center;
   transform: translateY(-50%);
-  background: #fff;
   cursor: pointer;
   display: block;
+  color: #888a88;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 .course-category {
   background: #51be78;
@@ -108,11 +122,11 @@
 }
 .course-price {
   position: absolute;
-  bottom: 3px;
+  bottom: 0;
   right: 0;
   cursor: default;
   transform: translatey(-100%);
-  padding: 10px 13px;
+  padding: 10px 20px;
   background: #183661;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
@@ -153,9 +167,31 @@
 }
 .course-rating {
   text-align: center !important;
-  color: #000;
   padding: 20px 20px;
-  display: block;
+  display: inline-block;
+  margin: 2px;
+}
+.MuiSvgIcon-root {
+  font-size: 1.2rem !important;
+}
+.C-card-btn {
+  line-height: 1.5;
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 1rem;
+  background: #51be78;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  margin: 20px 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
+    "Helvetica Neue", sans-serif, Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.C-card-btn:hover {
+  background: #2ca24f;
 }
 .course-title {
   color: white;
@@ -167,6 +203,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: -30px;
+  margin-top: 2.5rem;
+  position: relative;
 }
 .course-1-content {
   padding: 20px 40px;
@@ -179,6 +218,13 @@
     display: flex;
     justify-content: center;
   }
+  .owl-prev {
+    top: 47% !important;
+  }
+  .owl-next {
+    top: 47% !important;
+    right: -5px !important;
+  }
   .course-media {
     display: block;
     height: 260px;
@@ -188,7 +234,7 @@
   .course-root {
     width: 350px;
     margin-top: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     text-align: center;
   }
 }
@@ -204,9 +250,8 @@
     border-style: none;
   }
   .course-root {
-    width: 350px;
+    width: 355px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -214,7 +259,6 @@
   .course-root {
     width: 340px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -222,7 +266,6 @@
   .course-root {
     width: 328px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -230,7 +273,6 @@
   .course-root {
     width: 330px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -238,7 +280,6 @@
   .course-root {
     width: 320px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -256,8 +297,34 @@
   .course-root {
     width: 450px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
+  }
+  .owl-prev {
+    top: 42% !important;
+  }
+  .owl-next {
+    top: 42% !important;
+    right: 20px !important;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .owl-next {
+    right: 10px !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .owl-next {
+    right: 5px !important;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .owl-next {
+    right: 0px !important;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .owl-next {
+    right: -5px !important;
   }
 }
 @media screen and (max-width: 1105px) {
@@ -270,8 +337,13 @@
   .course-root {
     width: 450px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
+  }
+  .owl-prev {
+    top: 44.5% !important;
+  }
+  .owl-next {
+    top: 44.5% !important;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -284,66 +356,22 @@
   .course-root {
     width: 440px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
+  }
+  .owl-prev {
+    top: 43.5% !important;
+  }
+  .owl-next {
+    top: 43.5% !important;
   }
 }
 @media screen and (max-width: 1080px) {
   .course-root {
     width: 430px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
-/* @media screen and (max-width: 1070px) {
-  .course-price {
-    position: absolute;
-    bottom: 3px;
-    right: 0;
-    cursor: default;
-    transform: translatey(-100%);
-    padding: 15px 15px;
-    background: #183661;
-    color: #fff;
-  }
-  .course-media {
-    display: block;
-    height: 230px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .course-root {
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  .owl-prev {
-    position: absolute;
-    top: 45%;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    left: 1rem;
-    display: block;
-    font-size: 1.5rem;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.9rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
-} */
 @media screen and (max-width: 1055px) {
   .card-container {
     display: flex;
@@ -368,10 +396,10 @@
   .course-root {
     width: 340px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
   .course-container {
+    position: relative;
     margin-left: 8%;
     margin-right: 8%;
     background: #ffffff;
@@ -381,6 +409,11 @@
   }
   .course-additTitle {
     text-align: center;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .course-root {
+    width: 325px;
   }
 }
 @media screen and (max-width: 1030px) {
@@ -422,7 +455,6 @@
   .course-root {
     width: 310px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
   .course-container {
@@ -437,143 +469,45 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 975px) {
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 2.2rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
-}
-@media screen and (max-width: 960px) {
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 1.8rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
-}
 @media screen and (max-width: 955px) {
   .course-root {
     width: 305px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-}
-@media screen and (max-width: 950px) {
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 1.5rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 940px) {
   .course-root {
     width: 295px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 1.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 935px) {
   .course-root {
     width: 300px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 1.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 935px) {
   .course-root {
     width: 298px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-}
-@media screen and (max-width: 925px) {
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.8rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 920px) {
   .course-root {
     width: 295px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.4rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 910px) {
   .course-root {
     width: 290px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -585,7 +519,6 @@
   .course-root {
     width: 285px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
   .course-media {
@@ -594,24 +527,11 @@
     max-width: 100%;
     border-style: none;
   }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 885px) {
   .course-root {
     width: 280px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -619,7 +539,13 @@
   .course-root {
     width: 275px;
     margin-top: 10px;
-    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 855px) {
+  .course-root {
+    width: 273px;
+    margin-top: 10px;
     text-align: center;
   }
 }
@@ -627,23 +553,23 @@
   .course-root {
     width: 270px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
+  }
+  .owl-next {
+    right: -15px !important;
   }
 }
 @media screen and (max-width: 835px) {
   .course-root {
     width: 265px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 825px) {
   .course-root {
     width: 260px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -651,11 +577,10 @@
   .course-root {
     width: 255px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 795px) {
   .card-container {
     display: flex;
     justify-content: center;
@@ -664,19 +589,7 @@
   .course-root {
     width: 230px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-prev {
-    position: absolute;
-    top: 45%;
-    left: 3rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 775px) {
@@ -688,7 +601,6 @@
   .course-root {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
   .course-media {
@@ -697,58 +609,12 @@
     max-width: 100%;
     border-style: none;
   }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
-  .owl-prev {
-    position: absolute;
-    top: 45%;
-    left: 1.5rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: block;
-  }
 }
 @media screen and (max-width: 770px) {
   .card-container {
     display: flex;
     justify-content: center;
     margin-left: 10px;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
-  .owl-prev {
-    position: absolute;
-    top: 45%;
-    left: 1.5rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 765px) {
@@ -757,35 +623,12 @@
     justify-content: center;
     margin-left: 10px;
   }
-  .course-root {
+  /* .course-root {
     width: 230px;
     margin-top: 10px;
     margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
-  .owl-prev {
-    position: absolute;
-    top: 45%;
-    left: 1.5rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: block;
-  }
+  } */
 }
 @media screen and (max-width: 760px) {
   .card-container {
@@ -793,34 +636,13 @@
     justify-content: center;
     margin-left: 10px;
   }
+  .course-media {
+    height: 150px;
+  }
   .course-root {
     width: 225px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: block;
-  }
-  .owl-prev {
-    position: absolute;
-    top: 45%;
-    left: 4rem;
-    margin-left: 30px;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 735px) {
@@ -831,20 +653,7 @@
   .course-root {
     width: 220px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.4rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 720px) {
@@ -855,47 +664,29 @@
   .course-root {
     width: 217px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
-  }
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0.4rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
   }
 }
 @media screen and (max-width: 710px) {
   .course-root {
-    width: 216px;
+    width: 210px;
   }
 }
 @media screen and (max-width: 700px) {
-  .owl-next {
-    position: absolute;
-    top: 45%;
-    right: -0.1rem;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    transform: translateY(-50%);
-    background: #fff;
-    cursor: pointer;
-    display: block;
-  }
   .course-root {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 2rem;
     text-align: center;
   }
   .course-media {
     height: 350px;
+  }
+  .owl-prev {
+    top: 45% !important;
+    left: 15px !important;
+  }
+  .owl-next {
+    top: 45% !important;
+    right: 0px !important;
   }
 }

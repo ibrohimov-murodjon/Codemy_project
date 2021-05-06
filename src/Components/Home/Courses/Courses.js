@@ -37,8 +37,8 @@ class Courses extends React.Component {
       loop: true,
       nav: true,
       navText: [
-        "<i class='fa fa-arrow-left salom' ></i>",
-        "<i class='fa fa-arrow-right'></i>",
+        "<i class='fa fa-arrow-left course-prev' ></i>",
+        "<i class='fa fa-arrow-right course-next'></i>",
       ],
       dotsClass: "owl-dots3",
       rewind: true,

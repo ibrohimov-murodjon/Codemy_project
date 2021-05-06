@@ -15,7 +15,7 @@ function Courses() {
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."
       />
       <MenuBar currentPath="Courses" />
-      <CourseInfo /> <br /> <br /> <br />
+      <CourseInfo /> <br /> <br /> <br /> <br /> <br /> <br />
       <Aforizms />
       <Footer />
     </div>
