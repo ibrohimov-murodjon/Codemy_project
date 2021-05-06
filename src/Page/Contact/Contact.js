@@ -12,7 +12,7 @@ import Navbar from "../../Components/Home/Navbar/Navbar";
 function About() {
   return (
     <div style={{ paddingTop: "70.4px" }}>
-      <Navbar contact="Nactive" />
+      <Navbar home="HomeNoactive" contact="Nactive" />
       <TopImage
         heading="Contact"
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."

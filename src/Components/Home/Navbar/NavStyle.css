@@ -41,15 +41,16 @@
   cursor: pointer;
   text-decoration: none;
   padding: 20px;
-  /* 
-  font-size: 19px;
+}
+
+.HomeNoactive {
   font-weight: 300;
+  color: black;
+  font-size: 19px;
   transition: color 0.5s;
   cursor: pointer;
   text-decoration: none;
-  margin: 10px;
-  padding-top: 10px;
-  padding-left: 8px; */
+  padding: 20px;
 }
 
 .NavIcon {
@@ -78,19 +79,20 @@
   justify-content: space-around;
 }
 
-.BigDiv {
+.navFontST {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-  justify-content: "space-between";
-  font-size: 17px;
+  font-size: 17.6px;
+  margin: 0;
+  padding: 0;
 }
 
 .barDivmarg {
   padding: 2px;
   display: flex;
   justify-content: flex-end;
-  width: 300px;
+  width: 373px;
 }
 
 @media (max-width: 1200px) {
@@ -102,5 +104,22 @@
 @media (max-width: 960px) {
   .barDivmarg {
     width: 500px;
+  }
+}
+
+@media (max-width: 760px) {
+  .barDivmarg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .link-bar {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .barDivmarg {
+    width: 100%;
   }
 }

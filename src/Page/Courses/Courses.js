@@ -9,7 +9,7 @@ import Navbar from "../../Components/Home/Navbar/Navbar";
 function Courses() {
   return (
     <div>
-      <Navbar courses="Nactive" />
+      <Navbar home="HomeNoactive" courses="Nactive" />
       <TopImage
         heading="Courses"
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."
