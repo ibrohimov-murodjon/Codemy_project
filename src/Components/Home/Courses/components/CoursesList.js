@@ -1,33 +1,13 @@
 import React from "react";
-import {
-  makeStyles,
-  createMuiTheme,
-  ThemeProvider,
-} from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import { green } from "@material-ui/core/colors";
 import Rating from "material-ui-rating";
 import Typography from "@material-ui/core/Typography";
 import "./index.css";
 
-const useStyles = makeStyles({
-  margin: {
-    marginBottom: "1.5rem",
-    color: "white",
-  },
-});
-
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-  },
-});
 function CoursesList(props) {
-  const classes = useStyles();
   return (
     <div className="card-container">
       <Card className="course-root">
@@ -39,7 +19,7 @@ function CoursesList(props) {
           />
           <CardContent className="course-category">
             <h2 className="course-price">
-              <span>$ 99.00</span>
+              <span>$99.00</span>
             </h2>
             <Typography
               gutterBottom
@@ -67,15 +47,9 @@ function CoursesList(props) {
             accusantium ipsam.
             {/* {text} */}
           </Typography>
-          <ThemeProvider theme={theme}>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.margin}
-            >
-              enroll in this course
-            </Button>
-          </ThemeProvider>
+          <a href="#" className="C-card-btn">
+            enroll in this course
+          </a>
         </div>
       </Card>
     </div>
