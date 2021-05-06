@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutHead() {
     return (<div className='about-head'>
-        <h1>About Our University</h1>
+        <span>About Our University</span>
     </div>)
 }
 

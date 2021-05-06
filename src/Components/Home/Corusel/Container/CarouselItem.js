@@ -6,19 +6,9 @@ function CarouselItem(props) {
 
   return (
     <div className="carouselMainContainer"> 
-      <div
-
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <div
-        className="caruselTitle"
-        >
+        <div className="caruselTitle">
           <h3 className="carH3">{props.title}</h3>
         </div>
-      </div>
     </div>
   );
 }
