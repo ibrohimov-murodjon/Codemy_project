@@ -1,3 +1,4 @@
+
 import React from "react";
 import Courses from "../../Components/Home/Courses/Courses";
 import Proglang from "../../Components/Home/ProgLang/Proglang";
@@ -20,6 +21,7 @@ function Home() {
       <Staffs />
       <Aforizms />
       <Footer />
+      
       <Videos />
     </div>
   );

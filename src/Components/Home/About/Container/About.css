@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-head, .about-txt1, .about-txt2, .about-btn{
+    font-family: "Muli", sans-serif;
+}
+.about-head{
+    color: #fff;
+    padding: 50px 20px 10px 20px;
+    min-width: 287px;  
+}
+.about-head span{
+    display: inline-block;
+    border-bottom: 4px solid #51BE78;
+    font-weight: 500;
+    font-size: 33px;
+    padding: 10px auto;
+}
+.about-body{
+    background: #304A71;
+    padding-bottom: 70px;
+}
+.about-txt1,.about-txt2{
+    color: #7697C6;
+    font-weight: 300;
+}
+.about-txt1{
+    padding: 10px auto;
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    line-height: 35px;
+    min-width: 460px;
+}
+.about-txt2{
+    padding: 10px auto;
+    font-size: 17.6px;
+    word-spacing: 2px;
+    line-height: 30px;
+    min-width: 460px;
+}
+.about-text{
+    padding: 10px 20px 0px 20px;
+}
+.about-btn{
+    color: #51be78;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+    font-size: 17.6px;
+    padding: 10px auto;
+    margin: 0 20px;
+}
+.about-btn:hover{
+    color: #51A573;
+    cursor: pointer;
+}
+
+/* responsive page */
+
+.about-container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "text-button"
+    ;
+    box-sizing: border-box;
+}
+.about-grid1{
+    grid-area: header;
+}
+.about-grid2{
+    grid-area: text-button;
+}
+@media (min-width:990px){
+    .about-container{
+        padding: auto;
+        display: grid;
+        grid-template-columns:1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header text-button"
+        ;
+    } 
+    .about-head{
+        color: #fff;
+        padding: 50px 0px 0px 130px;
+        min-width: 287px;  
+    }  
+    .about-head span{
+        display: inline-block;
+        border-bottom: 4px solid #51BE78;
+        font-weight: 500;
+        font-size: 33px;
+    }
+    .about-txt1{
+        padding: 50px 0px 10px 40px;
+        font-size: 1.15rem;
+        width: 730px;
+        min-width: 610px;
+    }
+    .about-txt2{
+        padding: 10px 110px 0px 40px;
+        font-size: 17.6px;
+        word-spacing: 2px;
+        line-height: 30px;
+        min-width: 610px;
+    }
+    .about-btn{
+        color: #51be78;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        font-weight: 300;
+        font-size: 17.6px;
+        padding: 0px 50px 50px 40px;
+    }
+}

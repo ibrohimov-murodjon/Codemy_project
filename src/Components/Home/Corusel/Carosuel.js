@@ -52,7 +52,7 @@ class Carousel extends React.Component {
     };
 
     return (
-      <div className="carouselMainContainer">
+      <div>
         <OwlCarousel ref="car" options={options} events={events}>
           {this.state.items}
         </OwlCarousel>
