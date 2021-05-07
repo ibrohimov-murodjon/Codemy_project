@@ -8,6 +8,7 @@ const Admission = () => {
   return (
     <div>
       <Navbar home="HomeNoactive" admission="Nactive" />
+      <br/>
       <TopImage
         heading="Admission"
         lorem="Lorem ipsum dolor sit amet consectetur adipisicing."
