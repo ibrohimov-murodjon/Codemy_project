@@ -20,9 +20,10 @@ function Home() {
       <About />
       <Staffs />
       <Aforizms />
-      <Footer />
-      
       <Videos />
+
+      <Footer />
+
     </div>
   );
 }
