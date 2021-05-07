@@ -16,7 +16,6 @@
   font-size: 14px;
   margin: 5px;
   padding: 4px 7px;
-  background: #d6d6d6;
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
@@ -57,5 +56,5 @@
 }
 .owl-theme .owl-dots3 .owl-dot.active span,
 .owl-theme .owl-dots3 .owl-dot:hover span {
-  background: green;
+  background: #51be78;
 }
