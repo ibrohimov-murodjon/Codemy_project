@@ -47,8 +47,7 @@ border: 1px solid #dee2e6 ;
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 110px;
-  background: #51be78;
+  height: 110px;  background: #51be78;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 .PL-card .Pl-card-btn{
@@ -60,7 +59,7 @@ border: 1px solid #dee2e6 ;
   text-decoration: none;
   margin: 20px 0;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 .PL-box{
   justify-content: space-around;
