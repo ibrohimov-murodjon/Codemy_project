@@ -5,11 +5,8 @@
   display: grid;
   grid-template-columns: 30% 30% 25%;
   justify-content: space-evenly;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding: 3rem 6% 5em 6%;
   font-size: 1.1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem !important;
 }
 
 .historyHeading {
