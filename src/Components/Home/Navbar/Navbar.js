@@ -78,11 +78,11 @@ export default function Navbar({ home, about, admission, contact, courses }) {
       >
         <Toolbar className="Tool-Bar">
           <div className="link-bar">
-            <IconButton style={{ paddingTop: "17px" }} disabled="folse">
+            <div style={{ paddingTop: "17px" }} disabled="folse">
               <Link to="/">
                 <img src="./images/logonav.jpg" alt="Logo" />
               </Link>
-            </IconButton>
+            </div>
 
             <Typography variant="h6" noWrap>
               <div className={classes.sectionDesktop}>

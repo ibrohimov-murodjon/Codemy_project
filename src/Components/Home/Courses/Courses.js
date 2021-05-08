@@ -54,7 +54,7 @@ class Courses extends React.Component {
     if (this.state.size < 1202) {
       this.setState({ ...this.state, itemNo: 2 });
     }
-    if (this.state.size < 700) {
+    if (this.state.size < 701) {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };

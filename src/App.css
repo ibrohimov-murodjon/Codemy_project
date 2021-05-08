@@ -11,7 +11,7 @@
   font-size: 6rem;
   justify-content: center;
   text-transform: capitalize;
-  top: 250px;
+  top: 200px;
   color: white;
 }
 .carH3 {
@@ -26,11 +26,11 @@
     display: flex;
     align-content: center;
     position: absolute;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bold;
     justify-content: center;
     text-transform: capitalize;
-    top: 280px;
+    top: 200px;
     color: white;
   }
   .carH3 {
@@ -45,16 +45,16 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .caruselTitle {
     display: flex;
     align-content: center;
     position: absolute;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     justify-content: center;
     text-transform: capitalize;
-    top: 300px;
+    top: 240px;
     color: white;
   }
   .carH3 {
@@ -69,7 +69,29 @@
   }
 }
 
-
+@media screen and (max-width: 610px) {
+  .caruselTitle {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    font-size: 2.8rem;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: capitalize;
+    top: 200px;
+    color: white;
+  }
+  .carH3 {
+    text-align: center;
+    width: 75%;
+    color: white;
+  }
+  .caruselImg {
+    filter: brightness(50%);
+    height: 500px;
+    width: 100%;
+  }
+}
 /* Staff Part */
 
 * {
@@ -362,6 +384,7 @@
   }
 }
 
+/* Why Academics Works */
 .info {
   display: flex;
   justify-content: center;
@@ -371,84 +394,126 @@
   width: 1110px;
   display: flex;
   justify-content: center;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 .infoImg {
   width: 540px;
+}
+.infoText1 {
+  padding: 0 0 0 125px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.infoTitle1 {
+  font-family: "Mulish", sans-serif, "Roboto";
+  font-size: 30px;
+  font-weight: 550;
+  box-shadow: 0 4px 0 #51be78;
+  width: 346px;
+  padding-top: -15px;
+  margin-bottom: 52px;
+  letter-spacing: 1.1px;
+}
+.infoTextWrapper {
+  margin-top: -18px;
 }
 .infoComp2 {
   width: 1110px;
   display: flex;
   justify-content: center;
-  margin-bottom: 95px;
-}
-.infoText1 {
-  padding: 0 0 0 125px;
+  margin-bottom: 80px;
 }
 .infoText2 {
+  display: flex;
+  align-items: center;
   padding: 0 120px 0 0;
 }
-.infoTitle1 {
-  font-family: "Mulish", sans-serif, "Roboto";
-  font-size: 34px;
-  font-weight: 400;
-  box-shadow: 0 4px 0 #51be78;
-  width: 389px;
-  margin-bottom: 60px;
-  letter-spacing: 1.1px;
-}
 .infoTitle2 {
-  width: 372px;
+  padding-top: -17px;
+  letter-spacing: 1px;
+  width: 329px;
 }
 .infop1 {
   color: #858585;
   font-family: "Mulish", sans-serif, "Roboto";
-  font-size: 20px;
-  margin-bottom: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  margin-bottom: 17px;
+  line-height: 1.7rem;
+  letter-spacing: -0.15px;
   font-weight: 300;
 }
 .infop2 {
   color: #858585;
   font-family: "Mulish", sans-serif, "Roboto";
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 1.7rem;
+  letter-spacing: -0.15px;
   font-weight: 300;
 }
 @media screen and (max-width: 1200px) {
   .infoImg {
     width: 450px;
+    margin-left: -30px;
   }
   .infoImg2 {
-    margin-left: -40px;
+    margin-left: -9px;
   }
   .infoText1 {
     padding: 0 0 0 110px;
+    margin-top: 14px;
   }
   .infoComp1 {
     width: 100%;
-    margin-bottom: 85px;
+    margin-bottom: 68px;
     margin-left: 15px;
+    display: flex;
+    justify-content: center;
   }
   .infoComp2 {
-    margin-bottom: 118px;
+    margin-bottom: 105px;
+  }
+  .infoText2 {
+    margin-top: 10px;
+
   }
   .infoTitle1 {
-    width: 379px;
+    font-size: 30px;
+    width: 319px;
+    padding-top: -15px;
+    margin-bottom: 52px;
+    word-spacing: -1px;
+    letter-spacing: -0.24px;
   }
   .infop1 {
-    width: 400px;
+    width: 370px;
+    color: #858585;
+    font-size: 18px;
+    margin-bottom: 17px;
+    line-height: 1.7rem;
+    letter-spacing: -0.45px;
+    font-weight: 200;
+  }
+  .infoTitle2 {
+    padding-top: -5px;
+    letter-spacing: 0.15px;
+    width: 310px;
   }
   .infop2 {
-    width: 400px;
+    width: 370px;
+    color: #858585;
+    font-size: 18px;
+    line-height: 1.7rem;
+    letter-spacing: -0.55px;
+    font-weight: 200;
   }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .infoComp1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 55px;
+    margin-bottom: 44px;
     margin-left: 4px;
   }
   .infoComp2 {
@@ -456,7 +521,7 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 95px;
-    margin-left: 8px;
+    margin-left: 3px;
   }
   .infoImg {
     width: 690px;
@@ -474,33 +539,38 @@
   }
   .infoTitle1 {
     font-family: "Mulish", sans-serif, "Roboto";
-    font-size: 34px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
     box-shadow: 0 4px 0 #51be78;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    letter-spacing: 1.1px;
-    width: 389px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    letter-spacing: 0.01px;
+    width: 323px;
+    word-spacing: -0.1;
   }
   .infoTitle2 {
-    margin-top: 23px;
-    width: 372px;
+    margin-top: 25px;
+    width: 308px;
   }
   .infop1 {
     color: #858585;
     font-family: "Mulish", sans-serif, "Roboto";
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin-bottom: 14px;
     line-height: 32px;
     font-weight: 300;
-    width: 690px;
+    width: 680px;
+    /* letter-spacing: 0.005px; */
+    word-spacing: 1.15px;
   }
   .infop2 {
     color: #858585;
     font-family: "Mulish", sans-serif, "Roboto";
-    font-size: 20px;
+    font-size: 17px;
     line-height: 32px;
     font-weight: 300;
+    word-spacing: -1.15px;
+    letter-spacing: -0.005px;
     width: 690px;
   }
 }
@@ -508,11 +578,14 @@
 @media screen and (max-width: 768px) {
   .infoImg {
     width: 510px;
-    margin-left: -4px;
+    margin-left: -1px;
   }
   .infop1,
   .infop2 {
     width: 510px;
+  }
+  .infoComp2 {
+    /* margin-bottom: 40px; */
   }
 }
 
@@ -550,13 +623,16 @@
     letter-spacing: 1.1px;
   }
   .infoTitle2 {
-    width: 372px;
+    font-size: 30px;
+    letter-spacing: -0.1px;
+    width: 308px;
+    word-spacing: 1.5px;
   }
   .infoText {
     margin-bottom: -27px;
   }
   .infop1,
   .infop2 {
-    width: 80%;
+    width: 98%;
   }
 }
