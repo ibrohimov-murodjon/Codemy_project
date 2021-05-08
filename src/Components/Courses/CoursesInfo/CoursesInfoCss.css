@@ -10,8 +10,7 @@
   margin-bottom: 1.5rem !important;
   width: 100%;
   min-height: 1px;
-  padding-right: 85px;
-  padding-left: 85px;
+  padding: 0 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -24,12 +23,6 @@
   margin-right: 5%;
   margin-top: 5%;
 }
-@media screen and (max-width: 1280px) {
-  .course-row {
-    padding-right: 65px;
-    padding-left: 65px;
-  }
-}
 @media screen and (max-width: 1240px) {
   .course-row {
     padding-right: 55px;
@@ -38,37 +31,45 @@
 }
 @media screen and (max-width: 1220px) {
   .course-row {
-    padding-right: 45px;
-    padding-left: 45px;
+    padding: 0 45px;
   }
 }
 @media screen and (max-width: 1055px) {
   .course-row {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding: 0 40px;
+  }
+  .card-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+    margin-top: 2.5rem;
+    position: relative;
+  }
+}
+@media screen and (max-width: 955px) {
+  .course-row {
+    padding: 0 35px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .course-row {
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 790px) {
   .course-row {
-    padding-right: 120px;
-    padding-left: 120px;
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 700px) {
   .course-row {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0 40px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .course-row {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .course-row {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0;
   }
 }
