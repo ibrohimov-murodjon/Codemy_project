@@ -77,6 +77,13 @@
   font-weight: 300;
 }
 
+.fontUnClassButton {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-weight: 300; */
+}
+
 @media (max-width: 1200px) {
   .inpot {
     width: 450px;

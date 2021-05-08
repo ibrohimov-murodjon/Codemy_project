@@ -62,17 +62,15 @@ const ContactForm = () => {
                   <Button
                     variant="contained"
                     style={{
-                      padding: "13px 48px",
+                      padding: "10px 54px",
                       color: "#fff",
-                      fontWeight: "bold",
                       textTransform: "capitalize",
-                      // eslint-disable-next-line no-dupe-keys
-                      fontWeight: 400,
+
                       fontSize: "18px",
                     }}
                     color="primary"
                   >
-                    Send Massage
+                    <span className="fontUnClassButton">Send Massage</span>
                   </Button>
                 </ThemeProvider>
               </div>
