@@ -18,4 +18,4 @@ const Text2 = (props) => {
   )
 }
 
-export default Text2
+export default Text2;

@@ -1,0 +1,133 @@
+.conactBlock1 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conactBlock2 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conactBlock3 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conactBlock4 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.inpot {
+  padding: 8px 16px;
+  width: 540px;
+  height: 48px !important;
+}
+
+.conatactConatiner {
+  width: 100%;
+}
+
+.FooIn {
+  padding: 16px;
+}
+
+.ariasty {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.Textsty {
+  justify-content: flex-start;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.areaSty {
+  padding: 10px;
+  display: block;
+  max-width: 1110px;
+  min-width: 1110px;
+  border-radius: 5px;
+}
+
+.areaSty:focus {
+  outline: none !important;
+  border: 2px solid #c8e6c9 !important;
+}
+
+.fontUnClass {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+}
+
+.fontUnClassButton {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-weight: 300; */
+}
+
+@media (max-width: 1200px) {
+  .inpot {
+    width: 450px;
+  }
+
+  .areaSty {
+    max-width: 930px;
+    min-width: 930px;
+  }
+}
+
+@media (max-width: 990px) {
+  .inpot {
+    width: 330px;
+  }
+
+  .areaSty {
+    max-width: 700px;
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 770px) {
+  .inpot {
+    width: 510px;
+  }
+
+  .areaSty {
+    max-width: 510px;
+    min-width: 510px;
+  }
+}
+
+@media (max-width: 575px) {
+  .inpot {
+    width: 100%;
+  }
+
+  .areaSty {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .FooIn {
+    width: 100%;
+  }
+}

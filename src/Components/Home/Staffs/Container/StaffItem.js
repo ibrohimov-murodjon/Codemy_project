@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   large: {
-    width: theme.spacing(6),
-    height: theme.spacing(6),
+    width: "50px",
+    height: "50px",
     marginRight: "1rem",
     userSelect: "none",
   },
@@ -31,10 +31,10 @@ function StaffItem(props) {
       </div>
       <div>
         <p className="staffPrgrph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
           mollitia. Possimus mollitia nobis libero quidem aut tempore dolore
           iure maiores, perferendis, provident numquam illum nisi amet
-          necessitatibus. A, provident aperiam!
+          necessitatibus. A, provident aperiam!"
         </p>
       </div>
     </div>

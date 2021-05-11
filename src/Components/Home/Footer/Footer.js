@@ -9,11 +9,11 @@ function Footer() {
           <div className="firstColumn footerRow">
             <p>
               <img src="images/logo.png" alt="" className="img-fluid" />
-              <p>
+              <p className="footerColOneText">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 nemo minima qui dolor, iusto iure.
               </p>
-              <p>
+              <p className="LearnMore">
                 <a href="#">Learn More</a>
               </p>
             </p>
@@ -69,10 +69,10 @@ function Footer() {
             </ul>
           </div>
           <div className="fourtColumn footerRow ">
-            <h3 className="footer-heading">
+            <h3 className="footer-heading footer-heading-4">
               <span>Contact</span>
             </h3>
-            <ul class="list-unstyled">
+            <ul className="list-unstyled">
               <li>
                 <a href="#">Help Center</a>
               </li>
@@ -96,8 +96,8 @@ function Footer() {
           <div className="madeBy">
             <div className="copyright">
               <p className="footerPrgr">
-                Copyright &copy; {new Date().getFullYear()}
-                All rights reserved | This template is made with 🤍 by{" "}
+                Copyright &copy;{new Date().getFullYear()} All rights reserved |
+                This template is made with🤍by{" "}
                 <a href="https://colorlib.com" target="_blank">
                   Colorlib
                 </a>

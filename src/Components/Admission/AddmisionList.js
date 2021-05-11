@@ -11,6 +11,7 @@ const AdmissionList = () => {
                <img src="/images/course_6.jpg"  className="mediaImage"    alt=""/>
                </div>
                 <div style={{height:"100%"}}>
+
                     <div className="addHeaderTit1 relAdd" >
                        <span className="title">College Requirements</span>
                        
@@ -19,6 +20,7 @@ const AdmissionList = () => {
                        <p className="addTit" style={{fontSize:"1.25rem"}}>Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit placeat nesciunt, voluptatum totam facere.</p>
                        <div className="addFlex">
                        <CheckIcon
+
                         style={{color:"#51be78",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -33,6 +35,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"#51be78",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -40,6 +43,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"#51be78",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -47,6 +51,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"#51be78",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -63,11 +68,13 @@ const AdmissionList = () => {
                 </div>
             </div>
             {/*     Second   Item    */}
+
             <div className="admisionFlexBox bits" style={{paddingTop:"100px"}}>
             <div style={{height:"100%"}}>
                     <div className="addHeaderTit paddingRightAdd">
                        <span className="title">Transferees</span>
                        
+
                        <p className="addTit1" style={{fontSize:"1.22rem"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque dolore libero corrupti! Itaque, delectus?</p>
 
                        <p className="addTit" style={{fontSize:"1.22rem"}}>Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit placeat nesciunt, voluptatum totam facere.</p>
@@ -80,6 +87,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"green",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -87,6 +95,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"green",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -94,6 +103,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"green",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 
@@ -101,6 +111,7 @@ const AdmissionList = () => {
                        </div> 
                        <div className="addFlex">
                        <CheckIcon
+
                        style={{color:"green",fontSize:"1.4rem"}}
                        />
                        <p className="checkTitle"> 

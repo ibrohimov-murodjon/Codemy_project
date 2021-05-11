@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,300&display=swap');
 .containerAdmission{
-     width: 80%;
+     width: 75%;
      padding: 88px 0;
      margin: 0 auto;
     
 }
 .addHeaderTit1{
+
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     padding-left: 15%;
 }
@@ -20,18 +20,17 @@
 .admisionFlexBox{
     display: flex;
     
-    
 }
 .addHeaderTit  .title{
     border-bottom: 4px solid #51be78 ;
     font-size: 2.1rem;
     font-weight: 600;
-    line-height: 1.2;
-    
+    line-height: 1.2;    
 }
 .addHeaderTit1  .title{
     border-bottom: 4px solid #51be78 ;
     font-size: 2.1rem;
+
     font-weight: 600;
     line-height: 1.2;
     
@@ -55,12 +54,13 @@
     color: gray;
 }
 .mediaImage{
-    width:580px;
-    height:400px
+    width:550px;
+    height:370px
 }
 .mediaIamge2{
-    width:580px;
-    height:400px
+    width:550px;
+    height:370px;
+    margin-left: 20px;
 }
 .addFlex{
     display: flex;
@@ -74,11 +74,18 @@
     font-family: 'Mulish', sans-serif;
     color: gray;
 }
+.addHeaderTit{
+    padding: 0;
+}
 
 
 
 
-@media screen and (max-width: 1500px) {
+
+
+
+@media screen and (max-width: 1310px) {
+
     .containerAdmission{
         width: 90%;
         padding: 20px 0;
@@ -87,8 +94,6 @@
     .admisionFlexBox{
         display: flex;
         align-items: center;
-        margin-top: -100px;
-
     }
     .mediaImage{
         width: 500px;
@@ -116,7 +121,7 @@
 }
 
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1100px) {
     .containerAdmission{
         width: 80%;
         padding: 50px 0;
@@ -126,9 +131,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         justify-content: flex-start;
         margin-top: 15px;
-
     }
     .mediaImage{
         width: 100%;
@@ -136,8 +141,9 @@
         display: flex;
         padding: 2% 0%;
         align-self: center;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
+
     .bits{
         display: flex;
         flex-direction: column-reverse;
@@ -148,8 +154,8 @@
         width: 100%;
         height: 90%;
         display: flex;
-        /* padding: 2% 0%; */
-        align-self: flex-start;
+        padding: 2% 0%;
+        /* align-self: flex-start; */
         /* margin: 0 auto; */
     }
     .addHeaderTit1{

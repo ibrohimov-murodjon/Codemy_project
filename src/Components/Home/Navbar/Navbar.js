@@ -17,10 +17,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles((theme) => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-
   inputRoot: {
     color: "red",
   },
@@ -70,128 +66,127 @@ export default function Navbar({ home, about, admission, contact, courses }) {
   const mobileMenuId = "primary-search-account-menu-mobile";
 
   return (
-    <div class="BigDiv">
+    <div className="BigDiv">
       <AppBar
         style={{
           display: "flex",
           backgroundColor: "white",
-          justifyContent: "space-between !important",
+          justifyContent: "center",
+          boxShadow: "0 -7px 13px #888",
         }}
         position="fixed"
       >
         <Toolbar className="Tool-Bar">
           <div className="link-bar">
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="#fff"
-              aria-label="open drawer"
-            >
-              <img src="./images/logonav.jpg" alt="Logo" />
-            </IconButton>
+            <div style={{ paddingTop: "17px" }} disabled="folse">
+              <Link to="/">
+                <img src="./images/logonav.jpg" alt="Logo" />
+              </Link>
+            </div>
 
             <Typography variant="h6" noWrap>
               <div className={classes.sectionDesktop}>
-                <Link className="LinkBar" to="/" class={home}>
-                  Home
+                <Link className="Nactive" to="/" class={home}>
+                  <p className="navFontST">Home</p>
                 </Link>
                 <Link className="LinkBar" to="/about" class={about}>
-                  About Us
+                  <p className="navFontST"> About Us</p>
                 </Link>
                 <Link className="LinkBar" to="/admission" class={admission}>
-                  Admission
+                  <p className="navFontST"> Admission</p>
                 </Link>
                 <Link className="LinkBar" to="/courses" class={courses}>
-                  Courses
+                  <p className="navFontST"> Courses</p>
                 </Link>
                 <Link className="LinkBar" to="/contact" class={contact}>
-                  Contact
+                  <p className="navFontST"> Contact</p>
                 </Link>
               </div>
             </Typography>
-          </div>
 
-          <div className={classes.grow} />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-            }}
-          >
-            <div style={{ padding: "2px", justifyContent: "space-between" }}>
-              <IconButton class="NavIcon">
-                <FacebookIcon />
-              </IconButton>
-              <IconButton class="NavIcon">
-                <TwitterIcon />
-              </IconButton>
-              <IconButton class="NavIcon">
-                <LinkedInIcon />
-              </IconButton>
-            </div>
-            <div className={classes.sectionMobile}>
-              <IconButton
-                aria-label="show more"
-                aria-controls={mobileMenuId}
-                aria-haspopup="true"
-                onClick={handleDrawerOpen}
-                class="NavIcon"
-              >
-                <MenuIcon />
-              </IconButton>
-              <div style={{}}>
-                <Drawer
-                  className={classes.drawer}
-                  variant="persistent"
-                  anchor="right"
-                  open={open}
-                  classes={{
-                    paper: classes.drawerPaper,
-                  }}
-                  style={{ margin: "2px" }}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <div className="barDivmarg">
+                <IconButton class="NavIcon">
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton class="NavIcon">
+                  <TwitterIcon />
+                </IconButton>
+                <IconButton class="NavIcon">
+                  <LinkedInIcon />
+                </IconButton>
+              </div>
+              <div className={classes.sectionMobile}>
+                <IconButton
+                  aria-label="show more"
+                  aria-controls={mobileMenuId}
+                  aria-haspopup="true"
+                  onClick={handleDrawerOpen}
+                  class="NavIcon"
                 >
-                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                    <IconButton onClick={handleDrawerClose}>
-                      <CloseIcon />
-                    </IconButton>
-                  </div>
-                  <div
-                    style={{
-                      width: "200px",
-
-                      overflow: "auto",
-                      display: "flex",
+                  <MenuIcon />
+                </IconButton>
+                <div style={{}}>
+                  <Drawer
+                    className={classes.drawer}
+                    variant="persistent"
+                    anchor="right"
+                    open={open}
+                    classes={{
+                      paper: classes.drawerPaper,
                     }}
+                    style={{ margin: "2px" }}
                   >
-                    <List>
-                      <ListItem>
-                        <Link class="LinkBar" to="/">
-                          Home
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link class="LinkBar" to="/about">
-                          About Us
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link class="LinkBar" to="/admission">
-                          Admission
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link class="LinkBar" to="/courses">
-                          Courses
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link class="LinkBar" to="/contact">
-                          Contact
-                        </Link>
-                      </ListItem>
-                    </List>
-                  </div>
-                </Drawer>
+                    <div
+                      style={{ display: "flex", justifyContent: "flex-end" }}
+                    >
+                      <IconButton onClick={handleDrawerClose}>
+                        <CloseIcon />
+                      </IconButton>
+                    </div>
+                    <div
+                      style={{
+                        width: "200px",
+
+                        overflow: "auto",
+                        display: "flex",
+                      }}
+                    >
+                      <List>
+                        <ListItem>
+                          <Link class="LinkBar" to="/">
+                            Home
+                          </Link>
+                        </ListItem>
+                        <ListItem>
+                          <Link class="LinkBar" to="/about">
+                            About Us
+                          </Link>
+                        </ListItem>
+                        <ListItem>
+                          <Link class="LinkBar" to="/admission">
+                            Admission
+                          </Link>
+                        </ListItem>
+                        <ListItem>
+                          <Link class="LinkBar" to="/courses">
+                            Courses
+                          </Link>
+                        </ListItem>
+                        <ListItem>
+                          <Link class="LinkBar" to="/contact">
+                            Contact
+                          </Link>
+                        </ListItem>
+                      </List>
+                    </div>
+                  </Drawer>
+                </div>
               </div>
             </div>
           </div>

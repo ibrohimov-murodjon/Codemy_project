@@ -37,8 +37,8 @@ class Courses extends React.Component {
       loop: true,
       nav: true,
       navText: [
-        "<i class='fa fa-arrow-left salom' ></i>",
-        "<i class='fa fa-arrow-right'></i>",
+        "<i class='fa fa-arrow-left course-prev' ></i>",
+        "<i class='fa fa-arrow-right course-next'></i>",
       ],
       dotsClass: "owl-dots3",
       rewind: true,
@@ -54,16 +54,14 @@ class Courses extends React.Component {
     if (this.state.size < 1202) {
       this.setState({ ...this.state, itemNo: 2 });
     }
-    if (this.state.size < 700) {
+    if (this.state.size < 701) {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };
   componentDidMount() {
     this.checkSize();
-    console.log("useEffect");
     window.addEventListener("resize", this.checkSize);
     return () => {
-      console.log("cleanup");
       window.removeEventListener("resize", this.checkSize);
     };
   }
@@ -79,17 +77,6 @@ class Courses extends React.Component {
       autoplay: this.state.autoplay,
     };
 
-    const events = {
-      onDragged: function (event) {
-        console.log("onDragged: " + event.type);
-      },
-      onChanged: function (event) {
-        console.log("onChanged: " + event.type);
-      },
-      onTranslate: function (event) {
-        console.log("onTranslate: " + event.type);
-      },
-    };
 
     return (
       <div className="course-container">
@@ -102,7 +89,7 @@ class Courses extends React.Component {
             id?
           </p>
         </div>
-        <OwlCarousel ref="car" options={options} events={events}>
+        <OwlCarousel ref="car" options={options}>
           {this.state.items}
         </OwlCarousel>
       </div>
