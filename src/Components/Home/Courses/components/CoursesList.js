@@ -5,6 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Rating from "material-ui-rating";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 function CoursesList(props) {
@@ -12,11 +13,13 @@ function CoursesList(props) {
     <div className="card-container">
       <Card className="course-root">
         <CardActionArea className="CardAction">
-          <CardMedia
-            className="course-media"
-            image={props.img}
-            title="courseOne"
-          />
+          <Link to="/single-course">
+            <CardMedia
+              className="course-media"
+              image={props.img}
+              title="courseOne"
+            />
+          </Link>
           <CardContent className="course-category">
             <h2 className="course-price">
               <span>$99.00</span>
@@ -46,7 +49,7 @@ function CoursesList(props) {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
             accusantium ipsam.
             {/* {text} */}
-          </Typography>
+          </Typography>{" "}
           <a href="#" className="C-card-btn">
             enroll in this course
           </a>
