@@ -1,8 +1,5 @@
 import React from "react";
 import AforizmsCont from "./Container/AforizmsCont";
-import SchoolIcon from '@material-ui/icons/School';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 
 
 function Aforizms() {

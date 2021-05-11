@@ -8,7 +8,8 @@
 .about-head{
     color: #fff;
     padding: 50px 20px 10px 20px;
-    min-width: 287px;  
+    min-width: 287px;
+    margin-left: 40px;  
 }
 .about-head span{
     display: inline-block;
@@ -40,7 +41,8 @@
     min-width: 460px;
 }
 .about-text{
-    padding: 10px 20px 0px 20px;
+    padding: 10px 0 0px 20px;
+    margin-left: 40px;
 }
 .about-btn{
     color: #51be78;
@@ -50,7 +52,7 @@
     font-weight: 300;
     font-size: 17.6px;
     padding: 10px auto;
-    margin: 0 20px;
+    margin-left: 60px;
 }
 .about-btn:hover{
     color: #51A573;
@@ -87,7 +89,7 @@
     } 
     .about-head{
         color: #fff;
-        padding: 50px 0px 0px 130px;
+        padding: 50px 0px 0px 120px;
         min-width: 287px;  
     }  
     .about-head span{
@@ -97,13 +99,13 @@
         font-size: 33px;
     }
     .about-txt1{
-        padding: 50px 0px 10px 40px;
+        padding: 50px 100px 10px 40px;
         font-size: 1.15rem;
         width: 730px;
         min-width: 610px;
     }
     .about-txt2{
-        padding: 10px 110px 0px 40px;
+        padding: 10px 100px 0px 40px;
         font-size: 17.6px;
         word-spacing: 2px;
         line-height: 30px;
