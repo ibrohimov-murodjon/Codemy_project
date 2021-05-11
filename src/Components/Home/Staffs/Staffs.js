@@ -57,10 +57,8 @@ class Staffs extends React.Component {
   };
   componentDidMount() {
     this.checkSize();
-    console.log("useEffect");
     window.addEventListener("resize", this.checkSize);
     return () => {
-      console.log("cleanup");
       window.removeEventListener("resize", this.checkSize);
     };
   }
@@ -77,13 +75,10 @@ class Staffs extends React.Component {
 
     const events = {
       onDragged: function (event) {
-        console.log("onDragged: " + event.type);
       },
       onChanged: function (event) {
-        console.log("onChanged: " + event.type);
       },
       onTranslate: function (event) {
-        console.log("onTranslate: " + event.type);
       },
     };
 

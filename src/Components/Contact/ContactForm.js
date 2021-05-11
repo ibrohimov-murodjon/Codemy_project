@@ -21,7 +21,7 @@ const theme2 = createMuiTheme({
 const ContactForm = () => {
   return (
     <div className="fontUnClass" style={{ padding: "88px 0" }}>
-      <form class="conatactConatiner" noValidate autoComplete="off">
+      <form className="conatactConatiner" noValidate autoComplete="off">
         <ThemeProvider theme={theme}>
           <div className="conactBlock1">
             <div className="FooIn">
