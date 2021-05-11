@@ -3,18 +3,21 @@ import "./Videos.css";
 import VideosModal from "./VideosModal";
 import { PlayArrow } from "@material-ui/icons";
 import { VideosData } from "./VideosData";
+import { SmallNews } from "./VideosData"
 import VideosAbout from './VideosAbout'
-import {Switch, Route} from "react-router-dom"
-// const [data, setData] = useState([])
+import {Link } from "react-router-dom"
 function Videos() {
   const [show, setShow] = useState(false);
+  
   const handleClick = () => {
     setShow(true);
-  };                                  
+  };
+  const SmallClick = () => {
+
+  }
   return (
-    
     <div className="Videos">
-     
+
       <div className="Videos-News">
         <div className="Videos-head">
           <div className="Videos-News-link">
@@ -40,22 +43,25 @@ function Videos() {
             </div>
             <div className="Videos-small">
               <div className="Small-news">
-                {VideosData.map((da, id) => (
-                  <div className="Videos-small-material">
-                    <div className="Videos-small-news">
-                      <span className="dark"></span>
-                      <img
-                        src={da.s_img_url}
-                        className="Videos-news-img"
-                      />
-                    </div>
+                {SmallNews.map((da, id) => (
+                  <div className="Videos-small-material" onClick={() => SmallClick(da.id)}>
+                    <Link to="/videosPage">
+                      <div className="Videos-small-news">
+                        <span className="dark"></span>
+                        <img
+                          src={da.s_img_url}
+                          className="Videos-news-img"
+                        />
+                      </div>
+                    </Link>
                     <div className="Videos-small-info">
                       <h3 className="V-bottom-title">
-                        <a href="#">{da.s_data}</a>
+                        <Link to="/videosPage">{da.s_data}</Link>
                       </h3>
-                      <a className="V-bottom-link" href="#">
+                      <Link className="V-bottom-link" to="/videosPage">
                         {da.s_img_title}
-                      </a>
+                      </Link>
+
                     </div>
                   </div>
                 ))}
@@ -81,9 +87,8 @@ function Videos() {
         </div>
       </div>
       <VideosModal show={show} setShow={setShow} />
-      
-    </div>
-  );
+
+    </div>);
 }
 
 export default Videos;
