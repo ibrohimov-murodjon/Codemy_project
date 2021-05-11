@@ -3,7 +3,6 @@
      width: 80%;
      padding: 88px 0;
      margin: 0 auto;
-     /* border: 1px solid red; */
     
 }
 .addHeaderTit1{
@@ -20,7 +19,7 @@
 
 .admisionFlexBox{
     display: flex;
-    /* border: 1px solid red; */
+    
     
 }
 .addHeaderTit  .title{
@@ -82,7 +81,6 @@
 @media screen and (max-width: 1500px) {
     .containerAdmission{
         width: 90%;
-        /* border: 1px solid red; */
         padding: 20px 0;
         margin: 0 auto;   
     }
@@ -90,7 +88,7 @@
         display: flex;
         align-items: center;
         margin-top: -100px;
-        /* border: 1px solid red; */
+
     }
     .mediaImage{
         width: 500px;
@@ -121,7 +119,6 @@
 @media screen and (max-width: 1110px) {
     .containerAdmission{
         width: 80%;
-        /* border: 1px solid red; */
         padding: 50px 0;
         margin: 0 auto;   
     }
@@ -131,7 +128,7 @@
         align-items: center;
         justify-content: flex-start;
         margin-top: 15px;
-       /* border: 1px solid red; */
+
     }
     .mediaImage{
         width: 100%;
