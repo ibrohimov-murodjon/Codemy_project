@@ -66,7 +66,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
   const mobileMenuId = "primary-search-account-menu-mobile";
 
   return (
-    <div class="BigDiv">
+    <div className="BigDiv">
       <AppBar
         style={{
           display: "flex",

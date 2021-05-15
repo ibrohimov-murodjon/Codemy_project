@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
 import AforizmsCont from "./Container/AforizmsCont";
-import SchoolIcon from '@material-ui/icons/School';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import ImportContactsIcon from '@material-ui/icons/ImportContacts';
-import axios from 'axios'; // +
+import axios from "axios";
 
 function Aforizms() {
-const [aforizm, setAforizm] = useState([]); // +
+const [aforizm, setAforizm] = useState([]);
 useEffect(() => {
   axios.get("http://localhost:8080/api/aforizm").then((res) => {
     const fullAforizm = res.data;
     setAforizm(fullAforizm)
   })
-}, [setAforizm]) // +
+}, [setAforizm]);
 
   return <div className='aforizmContainer aforStyle-1' >
     <div className='aforizmWrapper'>

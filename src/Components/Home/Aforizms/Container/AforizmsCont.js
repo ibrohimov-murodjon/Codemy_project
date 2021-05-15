@@ -1,10 +1,10 @@
 import React from 'react';
 
-const AforizmsCont = (props) => {
+const AforizmsCont = ({title, text}) => {
   return (
     <>
-      <h3 className='afoTitle'>{props.title}</h3>
-      <p className='afoText'>{props.text}</p>
+      <h3 className='afoTitle'>{title}</h3>
+      <p className='afoText'>{text}</p>
     </>
   )
 }

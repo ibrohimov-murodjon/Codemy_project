@@ -72,7 +72,7 @@ function Footer() {
             <h3 className="footer-heading footer-heading-4">
               <span>Contact</span>
             </h3>
-            <ul class="list-unstyled">
+            <ul className="list-unstyled">
               <li>
                 <a href="#">Help Center</a>
               </li>
