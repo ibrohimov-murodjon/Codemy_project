@@ -20,21 +20,19 @@ const useStyles = makeStyles((theme) => ({
 
 function StaffItem(props) {
   const classes = useStyles();
+  
   return (
     <div className="staffComponent">
       <div className="staffhhhh">
         <Avatar className={classes.large} alt="Travis Howard" src={props.img} />
         <div className="staffNames">
-          <h3 className="staffName">Aliison Holmes</h3>
-          <span className="staffDesgn">Designer</span>
+          <h3 className="staffName">{props.name}</h3>
+          <span className="staffDesgn">{props.surname}</span>
         </div>
       </div>
       <div>
         <p className="staffPrgrph">
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
-          mollitia. Possimus mollitia nobis libero quidem aut tempore dolore
-          iure maiores, perferendis, provident numquam illum nisi amet
-          necessitatibus. A, provident aperiam!"
+          {props.experience}
         </p>
       </div>
     </div>

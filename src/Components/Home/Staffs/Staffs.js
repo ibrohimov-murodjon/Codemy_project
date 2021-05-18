@@ -1,6 +1,7 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel2";
 import StaffItem from "./Container/StaffItem";
+import axios from 'axios';
 
 import "./js/owl.theme.default.css";
 import "./js/owl.carousel.css";
@@ -13,24 +14,23 @@ class Staffs extends React.Component {
     this.state = {
       size: window.innerWidth,
       items: [
-        <div key={1} className="item">
-          <StaffItem img="/images/person_1.jpg" />
-        </div>,
-        <div key={2} className="item">
-          <StaffItem img="/images/person_2.jpg" />
-        </div>,
-        <div key={3} className="item">
-          <StaffItem img="/images/person_3.jpg" />
-        </div>,
-        <div key={4} className="item">
-          <StaffItem img="/images/person_4.jpg" />
-        </div>,
-        <div key={5} className="item">
-          <StaffItem img="/images/person_1.jpg" />
-        </div>,
-        <div key={6} className="item">
-          <StaffItem img="/images/person_2.jpg" />
-        </div>,
+
+
+        // <div key={2} className="item">
+        //   <StaffItem img="/images/person_2.jpg" />
+        // </div>,
+        // <div key={3} className="item">
+        //   <StaffItem img="/images/person_3.jpg" />
+        // </div>,
+        // <div key={4} className="item">
+        //   <StaffItem img="/images/person_4.jpg" />
+        // </div>,
+        // <div key={5} className="item">
+        //   <StaffItem img="/images/person_1.jpg" />
+        // </div>,
+        // <div key={6} className="item">
+        //   <StaffItem img="/images/person_2.jpg" />
+        // </div>,
       ],
 
       itemNo: 2,
@@ -62,6 +62,19 @@ class Staffs extends React.Component {
       window.removeEventListener("resize", this.checkSize);
     };
   }
+  componentDidMount() {
+    axios.get('http://localhost:8080/api/staff').then(res => {
+      const allStaffs = res.data;     
+      var b = allStaffs.map((val, index) => {
+        return(
+        <div key={index} className="item">
+        <StaffItem img={val.img_url} name={val.name} surname={val.surname} experience={val.experience} />
+      </div>
+        )
+      })
+      this.setState({...this.state, items: b})
+    }, []);
+  }
 
   render() {
     const options = {
@@ -89,7 +102,7 @@ class Staffs extends React.Component {
           {this.state.items}
         </OwlCarousel>
       </div>
-    );
+    )
   }
 }
 
