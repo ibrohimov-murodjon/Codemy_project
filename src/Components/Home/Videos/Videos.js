@@ -1,20 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Videos.css";
 import VideosModal from "./VideosModal";
 import { PlayArrow } from "@material-ui/icons";
-import { VideosData } from "./VideosData";
 import { SmallNews } from "./VideosData"
-import VideosAbout from './VideosAbout'
+import VideosAbout from './VideosAbout';
 import {Link } from "react-router-dom"
+import axios from "axios"
 function Videos() {
+  const [videosData, setVideosData] = useState([]);
   const [show, setShow] = useState(false);
-  
-  const handleClick = () => {
-    setShow(true);
+  const [oneD, setOneD] = useState([])
+  const handleClick = (id) => {
+    setShow(true)
+    
+    
+    const eachVideos = videosData.filter((val) => {
+      return val.id === id;
+    });
+    setOneD(eachVideos[0])
   };
   const SmallClick = () => {
 
   }
+
+
+
+
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/api/videos").then((res) => {
+      const fullVideos = res.data;
+      setVideosData(fullVideos)
+    })
+  }, [setVideosData])
+
+
+
+
   return (
     <div className="Videos">
 
@@ -78,15 +100,15 @@ function Videos() {
           </a>
         </div>
         <div className="players-box">
-          {VideosData.map((d, id) => (
+          {videosData.map((d, id) => (
             <div className="Video-player" key={id}>
-              <img src={d.v_img_url} alt="" />
-              <PlayArrow className="video-player-icon" onClick={handleClick} />
+              <img src={d.img_url} alt="dsadas" />
+              <PlayArrow className="video-player-icon" onClick={()=>handleClick(d.id)} />
             </div>
           ))}
         </div>
       </div>
-      <VideosModal show={show} setShow={setShow} />
+      <VideosModal show={show} setShow={setShow} oneD={oneD.Url} />
 
     </div>);
 }

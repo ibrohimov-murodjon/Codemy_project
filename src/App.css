@@ -186,6 +186,7 @@
   }
   .staffComponent {
     padding-bottom: 25px;
+    
   }
 }
 
@@ -320,8 +321,10 @@
 }
 
 .aforizmIcon {
-  font-size: 65px !important;
-  width: 60px;
+  width: 63px;
+  height:63px;
+  /* font-size: 65px !important;
+  width: 60px; */
 }
 
 .afoTitle {
