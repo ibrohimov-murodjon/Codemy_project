@@ -168,9 +168,16 @@
 }
 .course-rating {
   text-align: center !important;
-  padding: 20px 20px;
+  padding: 30px;
+  font-size: 1.1rem !important;
   display: inline-block;
   margin: 2px;
+}
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: 0 auto;
 }
 .MuiSvgIcon-root {
   font-size: 1.2rem !important;

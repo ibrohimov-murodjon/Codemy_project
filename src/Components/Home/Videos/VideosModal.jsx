@@ -23,7 +23,23 @@ const VideosModal = ({ setShow, show, oneD }) => {
       >
         <Fade in={show}>
           <div className="">
+<<<<<<< HEAD
+            <iframe
+              style={{
+                border: "none",
+                outline: "none",
+                width: "90vw",
+                height: "84vh",
+              }}
+              src="https://www.youtube.com/embed/hiG4kmPkCNo"
+              title="YouTube video player"
+              frameborder="none"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+=======
           <div dangerouslySetInnerHTML={{__html: oneD}} />
+>>>>>>> 11a51b074e6b6debb9c217983a5a132f54d6d0e3
             <div className="Cres" onClick={onclose}>
               <CloseIcon />
             </div>
