@@ -7,49 +7,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,300&display=swap");
 
 .courseDetails {
-  /* width: 100%; */
-  padding-top: 90px !important;
+  position: relative;
   display: flex !important;
-  justify-content: center !important;
   margin-left: 17px !important;
-  /* padding-right: 15px;
-  padding-left: 15px; */
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* display: block;
-  padding: 88px 0;
-  margin: 0 auto; */
+  padding: 40px 0;
+  box-sizing: border-box;
 }
-.addHeaderTit1 {
+.modalContainer {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  overflow: scroll;
+  padding: 0px 0;
+}
+.CoursesaddHeaderTit1 {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-  margin-left: 110px !important;
-  width: 475px !important;
-  padding: 0 15px !important;
+  padding: 0 40px !important;
+  justify-content: flex-end;
+  width: calc(100% - 100px);
 }
 .courseTeacher {
   color: #000 !important;
   font-weight: 400 !important;
   margin-bottom: 4px !important;
 }
-.courseTeacher2 {
-  margin-bottom: 8px !important;
-}
 
-.title {
+.CoursesMtitle {
   font-size: 30px !important ;
-  /* line-height: 1.2; */
-  /* text-align: left; */
-  /* color: #000 !important; */
-}
-
-.addTit1 {
-  display: flex !important;
-  flex-direction: column !important;
-  font-size: 17px !important;
-  font-weight: 300 !important;
-  margin-bottom: 8px !important;
+  display: inline-block;
 }
 
 .courseTime {
@@ -61,67 +50,47 @@
   margin-bottom: 50px !important;
 }
 
-.addTit {
+.MaddTit {
   font-size: 1.1rem !important;
   color: #888 !important;
-  line-height: 30px !important;
-  margin-top: 10px !important;
+  margin-top: 25px !important;
   font-weight: 200 !important;
+  width: 100%;
+  min-height: 100px;
 }
 
-.ul-check {
+.Mul-check {
   margin-bottom: 3rem !important;
   padding-left: 0;
   margin-top: 0;
   display: block;
-  /* list-style: none; */
 }
-
-.addFlex {
+.checkTitleCourse {
+  margin: 0;
+}
+.course-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MaddFlex {
   position: relative;
   list-style: none;
   line-height: 1.5;
-  display: list-item;
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
   font-size: 1.1rem !important;
   color: #777 !important;
   font-weight: 300 !important;
   letter-spacing: -0.1px;
 }
-.checkIcon {
+.McheckIcon {
   color: #51be78;
   font-size: 1.3rem !important;
   margin-right: 15px !important;
-  /* margin-top: 5px !important; */
+  margin: 0;
 }
-
-/* .addHeaderTit1 .title {
-  border-bottom: 4px solid #51be78;
-  font-size: 2.1rem;
-  font-weight: 600;
-  line-height: 1.2;
-} */
-
-/* .addTit {
-  margin-bottom: 1rem;
-  text-align: left;
-  line-height: 1.5;
-  margin-top: 2rem;
-} */
-.mediaImage {
-  width: 540px !important;
-  height: 333px !important;
-  /* height: auto !important; */
-}
-/* .checkTitleCourse {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 15px;
-  line-height: 1.5;
-} */
-
-/* .addHeaderTit {
-  padding: 0;
-} */
 
 .enrollButton {
   margin-top: 0;
@@ -134,54 +103,29 @@
 }
 
 .enrollPrimary {
-  cursor: pointer;
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
-  border-radius: 0 !important;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   font-size: 1.25rem;
-  line-height: 1.5;
   color: #fff;
   background-color: #51be78;
-  border-color: #51be78;
   display: inline-block;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   border: 1px solid transparent;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.5s !important;
 }
-
 .enrollPrimary:hover {
   background: #2ca24f;
 }
 @media screen and (max-width: 1200px) {
-  .adminimg {
-    padding: 0 15px !important;
-  }
-  .mediaImage {
-    width: 450px !important;
-    height: 277px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
   .courseDetails {
     width: 100%;
-    margin-left: 45px !important;
   }
-  .addTit {
+  .MaddTit {
     width: 370px;
     margin: 0 0 16px !important;
-  }
-  .addHeaderTit1 {
-    width: 400px !important;
-    margin-left: 80px !important;
-  }
-  .addTit1 {
-    width: 370px !important;
+    margin-top: 25px !important;
   }
   .courseTime {
     margin-bottom: 35px !important;
@@ -191,136 +135,55 @@
     margin-top: -15px !important;
     margin-bottom: 65px !important;
   }
-  .addFlex {
-    width: 370px !important;
-  }
+}
+.mediaImage {
+  object-fit: cover;
 }
 @media screen and (max-width: 992px) {
+  .mediaImage {
+    object-fit: contain;
+    padding: 0 10px;
+  }
   .courseDetails {
     display: flex !important;
     flex-direction: column !important;
-    /* justify-content: left !important; */
     align-items: center !important;
-    /* margin-left: 137px !important; */
   }
-  .adminimg {
-    padding: 0 !important;
-    width: 690px !important;
+  .modalContainer {
+    display: flex;
   }
-  .mediaImage {
-    /* display: flex !important; */
-    /* justify-content: flex-start !important; */
-    width: 330px !important;
-    height: 203px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  .addHeaderTit1 {
-    margin: 0 !important;
-    padding: 0 !important;
-    padding-top: 43px !important;
-    width: 690px !important ;
-  }
-  .addTit {
-    width: 690px !important;
-  }
+}
+.MaddTit {
+  width: 690px !important;
+  margin-top: 25px !important;
 }
 @media screen and (max-width: 768px) {
   .courseDetails {
-    padding-top: 44px !important;
     margin: 0px !important;
     display: flex !important;
-    /* justify-content: center !important; */
     align-items: center !important;
   }
-  .adminimg {
+  .MaddTit {
     width: 510px !important;
-  }
-  .mediaImage {
-    width: 510px !important;
-    height: 315px !important;
-    margin: 0px !important;
-  }
-  .addTit {
-    width: 510px !important;
-  }
-  .addHeaderTit1 {
-    width: 510px !important;
+    margin-top: 25px !important;
   }
 }
 @media screen and (max-width: 576px) {
   .courseDetails {
-    width: 100% !important;
     padding: 0 15px !important;
-    padding-top: 44px !important;
   }
-  .adminimg {
-    width: 100% !important;
+  .Coursesadminimg {
+    display: flex;
+    height: 100%;
+    width: calc(100% - 50px) !important;
+    align-items: center;
   }
-  .mediaImage {
+
+  .MaddTit {
     width: 100% !important;
-    height: 100% !important;
-  }
-  .addHeaderTit1 {
-    width: 100% !important;
-    margin-bottom: 24px !important;
-  }
-  .addTit {
-    width: 100% !important;
+    margin-top: 25px !important;
   }
   .enrollButton {
     margin-bottom: 0 !important;
   }
 }
-/* .courseDetails {
-  width: 100%;
-   padding: 88px 0;
-   margin: 0 auto !important;
-} */
-/* .admisionFlexBox { */
-/* display: flex; */
-/* align-items: flex-start !important; */
-/* } */
-/* .mediaImage {
-  width: 480px !important;
-  height: 300px !important;
-  display: flex;
-  margin: 0 auto;
-} */
-/* .addHeaderTit1 {
-  padding-top: 0px !important;
-  padding-left: 25% !important;
-} */
-
-/* @media screen and (max-width: 1100px) {
-  .courseDetails {
-    width: 100%;
-    padding: 50px 0;
-    margin: 0 auto;
-  }
-  .admisionFlexBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 15px;
-    padding: 0;
-  }
-  .mediaImage {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    padding: 2% 0%;
-    align-self: center;
-  }
-  .bits {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .addHeaderTit1 {
-    padding: 0;
-  }
-  .addHeaderTit {
-    padding: 0;
-  }
-} */

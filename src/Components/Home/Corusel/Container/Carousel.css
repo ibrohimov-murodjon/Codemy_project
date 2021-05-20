@@ -1,20 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.carouselMainContainer{
-    transform: translateX(-10px);
-    background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./hero_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-    background-origin: content-box;
-    height: 100vh;
-    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+.carouselMainContainer {
+  transform: translateX(-10px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  background-position: center;
+  background-origin: content-box;
+  height: 100vh;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.carouselMainContainer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.7);
 }

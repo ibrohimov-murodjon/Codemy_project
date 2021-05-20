@@ -1,68 +1,80 @@
+import { Fade, Modal } from "@material-ui/core";
 import React from "react";
-import CheckIcon from "@material-ui/icons/Check";
 import "./CourseDetailsCss.css";
+import CloseIcon from "@material-ui/icons/Close";
+import CheckIcon from "@material-ui/icons/Check";
 
-function CourseDetails() {
+const CoursesModal = ({ card_text, setShow, show, img, title }) => {
+  const onclose = () => {
+    setShow(false);
+  };
   return (
-    <div className="courseDetails">
-      <div className="adminimg">
-        <img src="/images/course_5.jpg" className="mediaImage" alt="" />
-      </div>
+    <>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className="course-modal"
+        open={show}
+        style={{ border: "none", outline: "none" }}
+        closeAfterTransition
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={show}>
+          <div className="modalContainer">
+            <div className="courseDetails">
+              <div className="Coursesadminimg">
+                <img src={img} className="mediaImage" alt="" />
+              </div>
 
-      <div className="addHeaderTit1">
-        <span className="title">Course Details</span>
-
-        <p className="addTit1">
-          <strong className="courseTeacher">Teacher:</strong>
-          <p>Craig Daniel</p>
-        </p>
-
-        <p className="courseTime">
-          <strong className="courseTeacher courseTeacher2">Hours:</strong>
-          <p>8:00 am — 9:30am</p>
-        </p>
-
-        <p className="addTit">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque
-          dolore libero corrupti! Itaque, delectus?
-        </p>
-
-        <p className="addTit">
-          Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit
-          placeat nesciunt, voluptatum totam facere.
-        </p>
-        <ul className="ul-check">
-          <li className="addFlex">
-            <CheckIcon className="checkIcon" />
-            <p className="checkTitleCourse">
-              Lorem ipsum dolor sit amet consectetur
-            </p>
-          </li>
-          <li className="addFlex">
-            <CheckIcon className="checkIcon" />
-            <p className="checkTitleCourse">consectetur adipisicing</p>
-          </li>
-          <li className="addFlex">
-            <CheckIcon className="checkIcon" />
-            <p className="checkTitleCourse">Sit dolor repellat esse</p>
-          </li>
-          <li className="addFlex">
-            <CheckIcon className="checkIcon" />
-            <p className="checkTitleCourse">Necessitatibus</p>
-          </li>
-          <li className="addFlex">
-            <CheckIcon className="checkIcon" />
-            <p className="checkTitleCourse">Sed necessitatibus itaque</p>
-          </li>
-        </ul>
-        <p className="enrollButton">
-          <a href="#" className="enrollPrimary">
-            Enroll
-          </a>
-        </p>
-      </div>
-    </div>
+              <div className="CoursesaddHeaderTit1">
+                <h1 className="CoursesMtitle">{title} </h1> <br />
+                <br />
+                <span className="MaddTit">{card_text}</span>
+                <br />
+                <br />
+                <ul className="Mul-check">
+                  <li className="MaddFlex">
+                    <CheckIcon className="McheckIcon" />
+                    <p className="checkTitleCourse">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </li>
+                  <li className="MaddFlex">
+                    <CheckIcon className="McheckIcon" />
+                    <p className="checkTitleCourse">consectetur adipisicing</p>
+                  </li>
+                  <li className="MaddFlex">
+                    <CheckIcon className="McheckIcon" />
+                    <p className="checkTitleCourse">Sit dolor repellat esse</p>
+                  </li>
+                  <li className="MaddFlex">
+                    <CheckIcon className="McheckIcon" />
+                    <p className="checkTitleCourse">Necessitatibus</p>
+                  </li>
+                  <li className="MaddFlex">
+                    <CheckIcon className="McheckIcon" />
+                    <p className="checkTitleCourse">
+                      Sed necessitatibus itaque
+                    </p>
+                  </li>
+                </ul>
+                <p className="enrollButton">
+                  <a href="#" className="enrollPrimary">
+                    Enroll Now
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="Cres" onClick={onclose}>
+              <CloseIcon />
+            </div>
+          </div>
+        </Fade>
+      </Modal>
+    </>
   );
-}
+};
 
-export default CourseDetails;
+export default CoursesModal;

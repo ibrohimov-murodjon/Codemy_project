@@ -1,6 +1,7 @@
 import React from "react";
 import CourseList from "./components/CoursesList";
 import OwlCarousel from "react-owl-carousel2";
+import axios from "axios";
 import "./components/index.css";
 import "./js/owl.theme.default.css";
 import "./js/owl.carousel.css";
@@ -13,26 +14,25 @@ class Courses extends React.Component {
     this.state = {
       size: window.innerWidth,
       items: [
-        <div className="owl-item" key={1}>
-          <CourseList img="./images/course_1.jpg" />
-        </div>,
-        <div className="owl-item" key={2}>
-          <CourseList img="./images/course_2.jpg" />
-        </div>,
-        <div className="owl-item" key={3}>
-          <CourseList img="./images/course_3.jpg" />
-        </div>,
-        <div className="owl-item" key={4}>
-          <CourseList img="./images/course_4.jpg" />
-        </div>,
-        <div className="owl-item" key={5}>
-          <CourseList img="./images/course_5.jpg" />
-        </div>,
-        <div className="owl-item" key={6}>
-          <CourseList img="./images/course_6.jpg" />
-        </div>,
+        // <div className="owl-item" key={1}>
+        //   <CourseList img="./images/course_1.jpg" />
+        // </div>,
+        // <div className="owl-item" key={2}>
+        //   <CourseList img="./images/course_2.jpg" />
+        // </div>,
+        // <div className="owl-item" key={3}>
+        //   <CourseList img="./images/course_3.jpg" />
+        // </div>,
+        // <div className="owl-item" key={4}>
+        //   <CourseList img="./images/course_4.jpg" />
+        // </div>,
+        // <div className="owl-item" key={5}>
+        //   <CourseList img="./images/course_5.jpg" />
+        // </div>,
+        // <div className="owl-item" key={6}>
+        //   <CourseList img="./images/course_6.jpg" />
+        // </div>,
       ],
-
       itemNo: 3,
       loop: true,
       nav: true,
@@ -66,6 +66,26 @@ class Courses extends React.Component {
       console.log("cleanup");
       window.removeEventListener("resize", this.checkSize);
     };
+  }
+
+  componentDidMount() {
+    axios.get("http://localhost:8080/api/kurslar").then((res) => {
+      const fullCarousel = res.data;
+      var c = fullCarousel.map((val, ind) => {
+        return (
+          <div className="owl-item" key={ind}>
+            <CourseList
+              img={val.img_url}
+              title={val.img_title}
+              card_title={val.card_title}
+              card_text={val.card_text}
+              rating={val.rating}
+            />
+          </div>
+        );
+      });
+      this.setState({ ...this.state, items: c });
+    }, []);
   }
 
   render() {

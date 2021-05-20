@@ -1,21 +1,32 @@
-import React from "react";
-import "./proglang.css"
-import Plcomponent from "./Plcomponent"
-import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
-import MenuBookOutlinedIcon from '@material-ui/icons/MenuBookOutlined';
-import AccountBalanceOutlinedIcon from '@material-ui/icons/AccountBalanceOutlined';
+import React, { useState, useEffect } from "react";
+import "./proglang.css";
+import Plcomponent from "./Plcomponent";
+import axios from "axios";
+
 function Proglang() {
+  const [proglang, setProglang] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:8080/api/proglang").then((res) => {
+      const fullItem = res.data;
+      setProglang(fullItem);
+    });
+  }, [setProglang]);
+
   return (
-    
-      <div className="PL-container">
+    <div className="PL-container">
       <h1 className="PL-header">Dasturlash tillari</h1>
       <div className="PL-box">
-        <Plcomponent title="Personalize Learning" descibetion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, rem." imguri={<SchoolOutlinedIcon className="PL-icon"/>} />
-        <Plcomponent title="Trusted Courses" descibetion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, rem." imguri={<MenuBookOutlinedIcon  className="PL-icon"/>} />
-        <Plcomponent title="Tools for Students" descibetion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, rem." imguri={<AccountBalanceOutlinedIcon className="PL-icon" />} />
+        {proglang.map((demo, index) => (
+          <Plcomponent
+            key={index}
+            title={demo.img_title}
+            descibetion={demo.text}
+            imguri={demo.img_url}
+          />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default Proglang;

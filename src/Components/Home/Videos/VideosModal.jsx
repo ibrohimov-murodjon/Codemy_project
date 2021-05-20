@@ -24,7 +24,8 @@ const VideosModal = ({ setShow, show, handleClick, handleClose }) => {
           <div className="">
             <iframe
               style={{
-                border: "none", outline: "none" ,
+                border: "none",
+                outline: "none",
                 width: "90vw",
                 height: "84vh",
               }}
