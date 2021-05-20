@@ -49,21 +49,9 @@ class Carousel extends React.Component {
       autoplay: this.state.autoplay,
     };
 
-    const events = {
-      onDragged: function (event) {
-        // console.log("onDragged: " + event.type);
-      },
-      onChanged: function (event) {
-        // console.log("onChanged: " + event.type);
-      },
-      onTranslate: function (event) {
-        // console.log("onTranslate: " + event.type);
-      },
-    };
-
     return (
       <div>
-        <OwlCarousel ref="car" options={options} events={events}>
+        <OwlCarousel ref="car" options={options}>
           {this.state.items}
         </OwlCarousel>
       </div>

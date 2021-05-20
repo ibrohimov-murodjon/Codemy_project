@@ -50,6 +50,7 @@ const AdmissionList = () => {
           </div>
         </div>
         {/*     Second   Item    */}
+
         <div className="admisionFlexBox bits" style={{ paddingTop: "100px" }}>
           <div style={{ height: "100%" }}>
             <div className="addHeaderTit paddingRightAdd">
