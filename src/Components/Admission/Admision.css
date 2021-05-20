@@ -1,162 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,300&display=swap');
-.containerAdmission{
-     width: 80%;
-     padding: 88px 0;
-     margin: 0 auto;
-    
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,300&display=swap");
+.containerAdmission {
+  width: 80%;
+  padding: 88px 0;
+  margin: 0 auto;
 }
-.addHeaderTit1{
-    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    padding-left: 15%;
+.addHeaderTit1 {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  padding-left: 15%;
 }
-.addHeaderTit{
-    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /* padding-left: 15%;    */
-    padding: 0 20px;
-
-}
-
-
-.admisionFlexBox{
-    display: flex;
-    
-    
-}
-.addHeaderTit  .title{
-    border-bottom: 4px solid #51be78 ;
-    font-size: 2.1rem;
-    font-weight: 600;
-    line-height: 1.2;
-    
-}
-.addHeaderTit1  .title{
-    border-bottom: 4px solid #51be78 ;
-    font-size: 2.1rem;
-    font-weight: 600;
-    line-height: 1.2;
-    
-}
-.title{
-    line-height: 1.2;
-    text-align: left;
-}
-.addTit1{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    color: gray; margin-top: 55px;
+.addHeaderTit {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  /* padding-left: 15%;    */
+  padding: 0 20px;
 }
 
-.addTit{
-    margin-bottom: 1rem;
-    text-align:left;
-    line-height: 1.5;
-    margin-top: 2rem;
-    color: gray;
+.admisionFlexBox {
+  display: flex;
 }
-.mediaImage{
-    width:580px;
-    height:400px
+.addHeaderTit .title {
+  border-bottom: 4px solid #51be78;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
-.mediaIamge2{
-    width:580px;
-    height:400px
+.addHeaderTit1 .title {
+  border-bottom: 4px solid #51be78;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
-.addFlex{
-    display: flex;
-    justify-content: start;
+.title {
+  line-height: 1.2;
+  text-align: left;
+}
+.addTit1 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: gray;
+  margin-top: 55px;
 }
 
-.checkTitle{
-    margin-top: 5px;
-    margin-left: 18px;
-    font-size: 1.25rem;
-    font-family: 'Mulish', sans-serif;
-    color: gray;
+.addTit {
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 2rem;
+  color: gray;
 }
-
-
-
+.mediaImage {
+  width: 580px;
+  height: 400px;
+}
+.mediaIamge2 {
+  width: 580px;
+  height: 400px;
+}
+.addFlex {
+  display: flex;
+  justify-content: start;
+}
+.checkTitle {
+  margin-top: 5px;
+  margin-left: 18px;
+  font-size: 1.25rem;
+  font-family: "Mulish", sans-serif;
+  color: gray;
+}
 
 @media screen and (max-width: 1500px) {
-    .containerAdmission{
-        width: 90%;
-        padding: 20px 0;
-        margin: 0 auto;   
-    }
-    .admisionFlexBox{
-        display: flex;
-        align-items: center;
-        margin-top: -100px;
-
-    }
-    .mediaImage{
-        width: 500px;
-        height: 300px;
-        display: flex;
-        align-self: center;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-    .mediaIamge2{
-        width: 500px;
-        height: 300px;
-        display: flex;
-        padding: 2% 0%;
-        margin: 0 auto;
-    }
-    .addHeaderTit{
-        padding-top: 180px;
-    }
-    .addHeaderTit1{
-        padding-top: 180px;
-    }
-    
-    
+  .containerAdmission {
+    width: 90%;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  .admisionFlexBox {
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+  }
+  .mediaImage {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .mediaIamge2 {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    padding: 2% 0%;
+    margin: 0 auto;
+  }
+  .addHeaderTit {
+    padding-top: 180px;
+  }
+  .addHeaderTit1 {
+    padding-top: 180px;
+  }
 }
 
-
 @media screen and (max-width: 1110px) {
-    .containerAdmission{
-        width: 80%;
-        padding: 50px 0;
-        margin: 0 auto;   
-    }
-    .admisionFlexBox{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        margin-top: 15px;
-
-    }
-    .mediaImage{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        padding: 2% 0%;
-        align-self: center;
-        margin: 0 auto;
-    }
-    .bits{
-        display: flex;
-        flex-direction: column-reverse;
-        /* align-items: center;
+  .containerAdmission {
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  .admisionFlexBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  .mediaImage {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding: 2% 0%;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .bits {
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center;
         align-self: center; */
-    }
-    .mediaIamge2{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        /* padding: 2% 0%; */
-        align-self: flex-start;
-        /* margin: 0 auto; */
-    }
-    .addHeaderTit1{
-        padding: 0;
-    }
-    .addHeaderTit{
-        padding: 0;
-    }
-
+  }
+  .mediaIamge2 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    /* padding: 2% 0%; */
+    align-self: flex-start;
+    /* margin: 0 auto; */
+  }
+  .addHeaderTit1 {
+    padding: 0;
+  }
+  .addHeaderTit {
+    padding: 0;
+  }
 }
