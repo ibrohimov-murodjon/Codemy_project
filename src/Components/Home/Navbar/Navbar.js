@@ -86,19 +86,19 @@ export default function Navbar({ home, about, admission, contact, courses }) {
 
             <Typography variant="h6" noWrap>
               <div className={classes.sectionDesktop}>
-                <Link className="Nactive" to="/" class={home}>
+                <Link className="Nactive" to="/" id={home}>
                   <p className="navFontST">Home</p>
                 </Link>
-                <Link className="LinkBar" to="/about" class={about}>
+                <Link className="LinkBar" to="/about" id={about}>
                   <p className="navFontST"> About Us</p>
                 </Link>
-                <Link className="LinkBar" to="/admission" class={admission}>
+                <Link className="LinkBar" to="/admission" id={admission}>
                   <p className="navFontST"> Admission</p>
                 </Link>
-                <Link className="LinkBar" to="/courses" class={courses}>
+                <Link className="LinkBar" to="/courses" id={courses}>
                   <p className="navFontST"> Courses</p>
                 </Link>
-                <Link className="LinkBar" to="/contact" class={contact}>
+                <Link className="LinkBar" to="/contact" id={contact}>
                   <p className="navFontST"> Contact</p>
                 </Link>
               </div>
@@ -111,13 +111,13 @@ export default function Navbar({ home, about, admission, contact, courses }) {
               }}
             >
               <div className="barDivmarg">
-                <IconButton class="NavIcon">
+                <IconButton className="NavIcon">
                   <FacebookIcon />
                 </IconButton>
-                <IconButton class="NavIcon">
+                <IconButton className="NavIcon">
                   <TwitterIcon />
                 </IconButton>
-                <IconButton class="NavIcon">
+                <IconButton className="NavIcon">
                   <LinkedInIcon />
                 </IconButton>
               </div>
@@ -127,7 +127,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                   aria-controls={mobileMenuId}
                   aria-haspopup="true"
                   onClick={handleDrawerOpen}
-                  class="NavIcon"
+                  className="NavIcon"
                 >
                   <MenuIcon />
                 </IconButton>
@@ -159,27 +159,27 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                     >
                       <List>
                         <ListItem>
-                          <Link class="LinkBar" to="/">
+                          <Link className="LinkBar" to="/">
                             Home
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/about">
+                          <Link className="LinkBar" to="/about">
                             About Us
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/admission">
+                          <Link className="LinkBar" to="/admission">
                             Admission
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/courses">
+                          <Link className="LinkBar" to="/courses">
                             Courses
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/contact">
+                          <Link className="LinkBar" to="/contact">
                             Contact
                           </Link>
                         </ListItem>
