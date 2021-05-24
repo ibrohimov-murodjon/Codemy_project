@@ -7,7 +7,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="firstColumn footerRow">
-            <p>
+            <div>
               <img src="images/logo.png" alt="" className="img-fluid" />
               <p className="footerColOneText">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -16,7 +16,7 @@ function Footer() {
               <p className="LearnMore">
                 <a href="#">Learn More</a>
               </p>
-            </p>
+            </div>
           </div>
           <div className="secondColumn footerRow ">
             <h3 className="footer-heading">

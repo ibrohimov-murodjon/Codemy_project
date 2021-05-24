@@ -81,9 +81,7 @@ function Videos() {
       <div className="material-videos">
         <div className="Videos-News-link">
           <h1>Videodarslar</h1>
-          <a href="#" className>
-            View All Videos
-          </a>
+          <a href="#">View All Videos</a>
         </div>
         <div className="players-box">
           {videosData.map((d, id) => (
