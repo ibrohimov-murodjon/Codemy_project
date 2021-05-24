@@ -13,26 +13,7 @@ class Courses extends React.Component {
 
     this.state = {
       size: window.innerWidth,
-      items: [
-        // <div className="owl-item" key={1}>
-        //   <CourseList img="./images/course_1.jpg" />
-        // </div>,
-        // <div className="owl-item" key={2}>
-        //   <CourseList img="./images/course_2.jpg" />
-        // </div>,
-        // <div className="owl-item" key={3}>
-        //   <CourseList img="./images/course_3.jpg" />
-        // </div>,
-        // <div className="owl-item" key={4}>
-        //   <CourseList img="./images/course_4.jpg" />
-        // </div>,
-        // <div className="owl-item" key={5}>
-        //   <CourseList img="./images/course_5.jpg" />
-        // </div>,
-        // <div className="owl-item" key={6}>
-        //   <CourseList img="./images/course_6.jpg" />
-        // </div>,
-      ],
+      items: [],
       itemNo: 3,
       loop: true,
       nav: true,
@@ -60,6 +41,7 @@ class Courses extends React.Component {
   };
    
 
+<<<<<<< HEAD
   componentDidMount() {
     
     axios.get("http://localhost:8080/api/kurslar").then((res) => {
@@ -83,6 +65,11 @@ class Courses extends React.Component {
     return () => {
       window.removeEventListener("resize", this.checkSize);
     };
+=======
+  componentWillMount() {
+    axios.get("http://localhost:8080/api/kurslar").then((res) => {
+      this.setState({ ...this.state, items: res.data });
+>>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
     }, []);
   }
 
@@ -97,8 +84,7 @@ class Courses extends React.Component {
       autoplay: this.state.autoplay,
     };
 
-
-    return (
+    return this.state.items.length > 0 ? (
       <div className="course-container">
         <div className="course-kurslar">
           <h2 className="section-title-underline">
@@ -110,10 +96,22 @@ class Courses extends React.Component {
           </p>
         </div>
         <OwlCarousel ref="car" options={options}>
-          {this.state.items}
+          {this.state.items.map((val, ind) => {
+            return (
+              <div className="owl-item" key={ind}>
+                <CourseList
+                  img={val.img_url}
+                  title={val.img_title}
+                  card_title={val.card_title}
+                  card_text={val.card_text}
+                  rating={val.rating}
+                />
+              </div>
+            );
+          })}
         </OwlCarousel>
       </div>
-    );
+    ) : null;
   }
 }
 

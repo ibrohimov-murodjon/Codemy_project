@@ -1,7 +1,7 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel2";
 import StaffItem from "./Container/StaffItem";
-import axios from 'axios';
+import axios from "axios";
 
 import "./js/owl.theme.default.css";
 import "./js/owl.carousel.css";
@@ -13,26 +13,7 @@ class Staffs extends React.Component {
 
     this.state = {
       size: window.innerWidth,
-      items: [
-
-
-        // <div key={2} className="item">
-        //   <StaffItem img="/images/person_2.jpg" />
-        // </div>,
-        // <div key={3} className="item">
-        //   <StaffItem img="/images/person_3.jpg" />
-        // </div>,
-        // <div key={4} className="item">
-        //   <StaffItem img="/images/person_4.jpg" />
-        // </div>,
-        // <div key={5} className="item">
-        //   <StaffItem img="/images/person_1.jpg" />
-        // </div>,
-        // <div key={6} className="item">
-        //   <StaffItem img="/images/person_2.jpg" />
-        // </div>,
-      ],
-
+      items: [],
       itemNo: 2,
       loop: true,
       nav: false,
@@ -41,10 +22,8 @@ class Staffs extends React.Component {
       autoplay: true,
     };
   }
-  // newwwwww
   checkSize = () => {
     this.setState({ ...this.state, size: window.innerWidth });
-    // console.log(this.state);
     if (1100 < this.state.size) {
       this.setState({ ...this.state, itemNo: 2 });
     }
@@ -55,6 +34,7 @@ class Staffs extends React.Component {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };
+<<<<<<< HEAD
   
 
   componentDidMount() {
@@ -74,6 +54,25 @@ class Staffs extends React.Component {
         window.removeEventListener("resize", this.checkSize);
       };
     }, []);
+=======
+  // componentDidMount() {
+  //   this.checkSize();
+  //   window.addEventListener("resize", this.checkSize);
+  //   return () => {
+  //     window.removeEventListener("resize", this.checkSize);
+  //   };
+  // }
+  componentDidMount() {
+    axios.get("http://localhost:8080/api/staff").then((res) => {
+      this.setState({ ...this.state, items: res.data });
+    }, []);
+    ///checkSize
+    this.checkSize();
+    window.addEventListener("resize", this.checkSize);
+    return () => {
+      window.removeEventListener("resize", this.checkSize);
+    };
+>>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
   }
 
   render() {
@@ -87,22 +86,30 @@ class Staffs extends React.Component {
     };
 
     const events = {
-      onDragged: function (event) {
-      },
-      onChanged: function (event) {
-      },
-      onTranslate: function (event) {
-      },
+      onDragged: function (event) {},
+      onChanged: function (event) {},
+      onTranslate: function (event) {},
     };
 
-    return (
+    return this.state.items.length > 0 ? (
       <div className="StaffMainContainer">
         <span className="staffheader">Xodimlar</span>
         <OwlCarousel ref="car" options={options} events={events}>
-          {this.state.items}
+          {this.state.items.map((val, index) => {
+            return (
+              <div key={index} className="item">
+                <StaffItem
+                  img={val.img_url}
+                  name={val.name}
+                  surname={val.surname}
+                  experience={val.experience}
+                />
+              </div>
+            );
+          })}
         </OwlCarousel>
       </div>
-    )
+    ) : null;
   }
 }
 

@@ -26,6 +26,7 @@ class Carousel extends React.Component {
 
   componentDidMount() {
     axios.get("http://localhost:8080/api/carousel").then((res) => {
+<<<<<<< HEAD
       const fullCarousel = res.data;
       var a = fullCarousel.map((val, ind) => {
         return (
@@ -36,6 +37,17 @@ class Carousel extends React.Component {
       });
       this.setState({ ...this.state, items: a });
       
+=======
+      // const fullCarousel = res.data;
+      // var a = fullCarousel.map((val, ind) => {
+      //   return (
+      //     <div key={ind}>
+      //       <CarouselItem title={val.title} img={val.img_url} />
+      //     </div>
+      //   );
+      // });
+      this.setState({ ...this.state, items: res.data });
+>>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
     }, []);
   }
 
@@ -49,13 +61,19 @@ class Carousel extends React.Component {
       autoplay: this.state.autoplay,
     };
 
-    return (
+    return this.state.items.length > 0 ? (
       <div>
         <OwlCarousel ref="car" options={options}>
-          {this.state.items}
+          {this.state.items.map((val, ind) => {
+            return (
+              <div key={ind}>
+                <CarouselItem title={val.title} img={val.img_url} />
+              </div>
+            );
+          })}
         </OwlCarousel>
       </div>
-    );
+    ) : null;
   }
 }
 

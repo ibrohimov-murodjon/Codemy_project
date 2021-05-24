@@ -8,16 +8,24 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="firstColumn footerRow">
-            <p>
+            <div>
               <img src="images/logo.png" alt="" className="img-fluid" />
               <span className="footerColOneText">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 nemo minima qui dolor, iusto iure.
+<<<<<<< HEAD
               </span>
               <span className="LearnMore">
                 <Link to="/">Learn More</Link>
               </span>
             </p>
+=======
+              </p>
+              <p className="LearnMore">
+                <a href="#">Learn More</a>
+              </p>
+            </div>
+>>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
           </div>
           <div className="secondColumn footerRow ">
             <h3 className="footer-heading">

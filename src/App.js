@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 
 import Home from "./Page/Home/Home";
@@ -6,7 +7,7 @@ import Courses from "./Page/Courses/Courses";
 import { Route, Switch } from "react-router-dom";
 import Admission from "./Page/Admision/Admission";
 import Contact from "./Page/Contact/Contact";
-import VideosAbout from "./Components/Home/Videos/VideosAbout"
+import VideosAbout from "./Components/Home/Videos/VideosAbout";
 function App() {
   return (
     <div>

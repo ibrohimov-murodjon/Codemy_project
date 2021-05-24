@@ -26,12 +26,7 @@ function CoursesList(props) {
             <h2 className="course-price">
               <span>$99.00</span>
             </h2>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="h2"
-              className="course-title"
-            >
+            <Typography variant="h5" component="h2" className="course-title">
               {props.title}
             </Typography>
           </CardContent>
