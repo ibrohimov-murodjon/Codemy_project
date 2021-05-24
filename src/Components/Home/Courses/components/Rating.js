@@ -64,7 +64,6 @@ function Rating({ value, color }) {
           }
         ></i>
       </span>
-      {/* <span> {text ? text : ""}</span> */}
     </div>
   );
 }
@@ -76,8 +75,7 @@ Rating.defaultProps = {
 
 // giving some required argument and type for props
 Rating.propTypes = {
-  value: PropTypes.number.isRequired,
-  text: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
   color: PropTypes.string,
 };
 

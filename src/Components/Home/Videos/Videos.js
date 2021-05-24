@@ -54,6 +54,7 @@ function Videos() {
                 {SmallNews.map((da, id) => (
                   <div
                     className="Videos-small-material"
+                    key={id}
                     onClick={() => SmallClick(da.id)}
                   >
                     <Link to="/videosPage">
