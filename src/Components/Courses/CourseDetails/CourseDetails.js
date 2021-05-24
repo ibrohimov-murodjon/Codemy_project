@@ -15,6 +15,7 @@ const CoursesModal = ({ card_text, setShow, show, img, title }) => {
         aria-describedby="transition-modal-description"
         className="course-modal"
         open={show}
+        snackMessage={"Wrong info"}
         style={{ border: "none", outline: "none" }}
         closeAfterTransition
         BackdropProps={{
