@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React,  {useState} from "react";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
@@ -7,6 +7,7 @@ import Rating from "./Rating";
 import Typography from "@material-ui/core/Typography";
 import "./index.css";
 import CoursesModal from "../../../Courses/CourseDetails/CourseDetails";
+import { Link } from "react-router-dom";
 
 function CoursesList(props) {
   const [show, setShow] = useState(false);
@@ -41,9 +42,9 @@ function CoursesList(props) {
           <Typography variant="p" className="course-text">
             {props.card_text}
           </Typography>
-          <a href="#" className="C-card-btn">
+          <Link className="C-card-btn">
             enroll in this course
-          </a>
+          </Link>
         </div>
       </Card>
       <CoursesModal

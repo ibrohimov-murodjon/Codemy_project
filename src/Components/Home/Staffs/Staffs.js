@@ -55,13 +55,8 @@ class Staffs extends React.Component {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };
-  componentDidMount() {
-    this.checkSize();
-    window.addEventListener("resize", this.checkSize);
-    return () => {
-      window.removeEventListener("resize", this.checkSize);
-    };
-  }
+  
+
   componentDidMount() {
     axios.get('http://localhost:8080/api/staff').then(res => {
       const allStaffs = res.data;     
@@ -73,6 +68,11 @@ class Staffs extends React.Component {
         )
       })
       this.setState({...this.state, items: b})
+      this.checkSize();
+      window.addEventListener("resize", this.checkSize);
+      return () => {
+        window.removeEventListener("resize", this.checkSize);
+      };
     }, []);
   }
 

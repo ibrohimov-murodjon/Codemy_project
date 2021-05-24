@@ -3,7 +3,6 @@ import "./Videos.css";
 import VideosModal from "./VideosModal";
 import { PlayArrow } from "@material-ui/icons";
 import { SmallNews } from "./VideosData"
-import VideosAbout from './VideosAbout';
 import {Link } from "react-router-dom"
 import axios from "axios"
 function Videos() {
@@ -23,10 +22,6 @@ function Videos() {
 
   }
 
-
-
-
-
   useEffect(() => {
     axios.get("http://localhost:8080/api/videos").then((res) => {
       const fullVideos = res.data;
@@ -39,12 +34,11 @@ function Videos() {
 
   return (
     <div className="Videos">
-
       <div className="Videos-News">
         <div className="Videos-head">
           <div className="Videos-News-link">
             <h1>News & updates</h1>
-            <a href="#">Read All Files</a>
+            <Link to="/notFound">Read All Files</Link>
           </div>
           <div className="News">
             <div className="Head-News">
@@ -53,26 +47,28 @@ function Videos() {
                 <img
                   src="./images/bg_1.jpg"
                   className="Videos-news-img"
+                  alt="not found"
                 />
               </div>
 
               <h1 className="V-bottom-title">
-                <a href="#">JUNE 6, 2019 / ADMISSION, UPDATES</a>
+                <Link to="/jfkkds">JUNE 6, 2019 / ADMISSION, UPDATES</Link>
               </h1>
-              <a href="#" className="V-bottom-link">
+              <Link to="/saloms" className="V-bottom-link">
                 Campus Camping and Learning Session
-              </a>
+              </Link>
             </div>
             <div className="Videos-small">
               <div className="Small-news">
                 {SmallNews.map((da, id) => (
-                  <div className="Videos-small-material" onClick={() => SmallClick(da.id)}>
+                  <div className="Videos-small-material" key={id} onClick={() => SmallClick(da.id)}>
                     <Link to="/videosPage">
                       <div className="Videos-small-news">
                         <span className="dark"></span>
                         <img
                           src={da.s_img_url}
                           className="Videos-news-img"
+                          alt="not found"
                         />
                       </div>
                     </Link>
@@ -95,9 +91,9 @@ function Videos() {
       <div className="material-videos">
         <div className="Videos-News-link">
           <h1>Videodarslar</h1>
-          <a href="#" className>
+          <Link to="/dfdf">
             View All Videos
-          </a>
+          </Link>
         </div>
         <div className="players-box">
           {videosData.map((d, id) => (

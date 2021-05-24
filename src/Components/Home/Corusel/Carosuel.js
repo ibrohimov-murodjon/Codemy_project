@@ -35,7 +35,7 @@ class Carousel extends React.Component {
         );
       });
       this.setState({ ...this.state, items: a });
-      console.log({ ...this.state });
+      
     }, []);
   }
 

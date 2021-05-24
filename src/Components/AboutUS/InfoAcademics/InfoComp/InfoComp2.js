@@ -8,7 +8,7 @@ const InfoComp2 = (props) => {
         <Text2 Title={"Personalized Learning"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque dolore libero corrupti! Itaque, delectus?"} p2={"Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit placeat nesciunt, voluptatum totam facere."} />
       </div>
       <div>
-        <img src={props.Img} className='infoImg infoImg2' />
+        <img src={props.Img} alt="not found" className='infoImg infoImg2' />
       </div>
     </div>
   );

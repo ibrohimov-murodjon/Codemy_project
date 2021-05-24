@@ -16,16 +16,16 @@ function About() {
   return (
     <div className="about-body">
       <div className="about-container">
-        {aboutItem.map(() => (
-          <>
-            <div className="about-grid1">
+        {aboutItem.map((item,index) => (
+          <div key={index}>
+            <div className="about-grid1"> 
               <AboutHead />
             </div>
             <div className="about-grid2">
               <AboutText head={aboutItem[0].title} parag={aboutItem[0].text} />
               <AboutBtn />
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>

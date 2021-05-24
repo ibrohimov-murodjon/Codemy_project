@@ -3,7 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
-import Menu from "@material-ui/core/Menu";
+// import Menu from "@material-ui/core/Menu";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Navbar({ home, about, admission, contact, courses }) {
   const classes = useStyles();
 
-  const [open, setOpen] = React.useState(false);
+  const [open1, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -53,15 +53,17 @@ export default function Navbar({ home, about, admission, contact, courses }) {
     setOpen(false);
   };
 
-  const menuId = "primary-search-account-menu";
-  const renderMenu = (
-    <Menu
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-    ></Menu>
-  );
+  // const menuId = "primary-search-account-menu";
+  // const renderMenu = (
+  //   <Menu
+  //     open={true}
+  //     anchorEl={()=><div>153</div>}
+  //     anchorOrigin={{ vertical: "top", horizontal: "right" }}
+  //     id={menuId}
+  //     keepMounted
+  //     transformOrigin={{ vertical: "top", horizontal: "right" }}
+  //   ></Menu>
+  // );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
 
@@ -86,19 +88,19 @@ export default function Navbar({ home, about, admission, contact, courses }) {
 
             <Typography variant="h6" noWrap>
               <div className={classes.sectionDesktop}>
-                <Link className="Nactive" to="/" class={home}>
+                <Link className={`Nactive ${home}`}  to="/" >
                   <p className="navFontST">Home</p>
                 </Link>
-                <Link className="LinkBar" to="/about" class={about}>
+                <Link className={`LinkBar ${about}`}  to="/about" >
                   <p className="navFontST"> About Us</p>
                 </Link>
-                <Link className="LinkBar" to="/admission" class={admission}>
+                <Link className={`LinkBar ${admission}`}  to="/admission" >
                   <p className="navFontST"> Admission</p>
                 </Link>
-                <Link className="LinkBar" to="/courses" class={courses}>
+                <Link className={`LinkBar ${courses}`} to="/courses" >
                   <p className="navFontST"> Courses</p>
                 </Link>
-                <Link className="LinkBar" to="/contact" class={contact}>
+                <Link className={`LinkBar ${contact}`} to="/contact" >
                   <p className="navFontST"> Contact</p>
                 </Link>
               </div>
@@ -111,13 +113,13 @@ export default function Navbar({ home, about, admission, contact, courses }) {
               }}
             >
               <div className="barDivmarg">
-                <IconButton class="NavIcon">
+                <IconButton className="NavIcon">
                   <FacebookIcon />
                 </IconButton>
-                <IconButton class="NavIcon">
+                <IconButton className="NavIcon">
                   <TwitterIcon />
                 </IconButton>
-                <IconButton class="NavIcon">
+                <IconButton className="NavIcon">
                   <LinkedInIcon />
                 </IconButton>
               </div>
@@ -127,7 +129,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                   aria-controls={mobileMenuId}
                   aria-haspopup="true"
                   onClick={handleDrawerOpen}
-                  class="NavIcon"
+                  className="NavIcon"
                 >
                   <MenuIcon />
                 </IconButton>
@@ -136,7 +138,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                     className={classes.drawer}
                     variant="persistent"
                     anchor="right"
-                    open={open}
+                    open={open1}
                     classes={{
                       paper: classes.drawerPaper,
                     }}
@@ -159,27 +161,27 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                     >
                       <List>
                         <ListItem>
-                          <Link class="LinkBar" to="/">
+                          <Link className="LinkBar" to="/">
                             Home
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/about">
+                          <Link className="LinkBar" to="/about">
                             About Us
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/admission">
+                          <Link className="LinkBar" to="/admission">
                             Admission
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/courses">
+                          <Link className="LinkBar" to="/courses">
                             Courses
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link class="LinkBar" to="/contact">
+                          <Link className="LinkBar" to="/contact">
                             Contact
                           </Link>
                         </ListItem>
@@ -193,7 +195,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
         </Toolbar>
       </AppBar>
 
-      {renderMenu}
+      {/* {renderMenu} */}
     </div>
   );
 }
