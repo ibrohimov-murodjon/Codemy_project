@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.Nactive {
+#Nactive {
   font-weight: 300;
   color: #51be78;
   font-size: 19px;
@@ -43,7 +43,7 @@
   padding: 20px;
 }
 
-.HomeNoactive {
+#HomeNoactive {
   font-weight: 300;
   color: black;
   font-size: 19px;
