@@ -47,7 +47,7 @@ class Courses extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     axios.get("http://localhost:8080/api/kurslar").then((res) => {
       this.setState({ ...this.state, items: res.data });
     }, []);
