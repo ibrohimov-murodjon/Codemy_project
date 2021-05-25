@@ -41,35 +41,16 @@ class Courses extends React.Component {
   };
    
 
-<<<<<<< HEAD
   componentDidMount() {
     
-    axios.get("http://localhost:8080/api/kurslar").then((res) => {
-      const fullCarousel = res.data;
-      var c = fullCarousel.map((val, ind) => {
-        return (
-          <div className="owl-item" key={ind}>
-            <CourseList
-              img={val.img_url}
-              title={val.img_title}
-              card_title={val.card_title}
-              card_text={val.card_text}
-              rating={val.rating}
-            />
-          </div>
-        );
-      });
-      this.setState({ ...this.state, items: c });
       this.checkSize();
     window.addEventListener("resize", this.checkSize);
     return () => {
       window.removeEventListener("resize", this.checkSize);
-    };
-=======
+    }};
   componentWillMount() {
     axios.get("http://localhost:8080/api/kurslar").then((res) => {
       this.setState({ ...this.state, items: res.data });
->>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
     }, []);
   }
 

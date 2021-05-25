@@ -15,16 +15,10 @@ function About() {
 
   return (
     <div className="about-body">
-      <div className="about-container">
-<<<<<<< HEAD
+      <div className="about-container">  
         {aboutItem.map((item,index) => (
           <div key={index}>
             <div className="about-grid1"> 
-=======
-        {aboutItem.map((id) => (
-          <div key={id}>
-            <div className="about-grid1">
->>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
               <AboutHead />
             </div>
             <div className="about-grid2">

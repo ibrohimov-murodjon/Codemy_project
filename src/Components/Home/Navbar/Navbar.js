@@ -88,8 +88,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
 
             <Typography variant="h6" noWrap>
               <div className={classes.sectionDesktop}>
-<<<<<<< HEAD
-                <Link className={`Nactive ${home}`}  to="/" >
+                <Link className={`LinkBar ${home}`}  to="/" >
                   <p className="navFontST">Home</p>
                 </Link>
                 <Link className={`LinkBar ${about}`}  to="/about" >
@@ -102,21 +101,6 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                   <p className="navFontST"> Courses</p>
                 </Link>
                 <Link className={`LinkBar ${contact}`} to="/contact" >
-=======
-                <Link className="Nactive" to="/" id={home}>
-                  <p className="navFontST">Home</p>
-                </Link>
-                <Link className="LinkBar" to="/about" id={about}>
-                  <p className="navFontST"> About Us</p>
-                </Link>
-                <Link className="LinkBar" to="/admission" id={admission}>
-                  <p className="navFontST"> Admission</p>
-                </Link>
-                <Link className="LinkBar" to="/courses" id={courses}>
-                  <p className="navFontST"> Courses</p>
-                </Link>
-                <Link className="LinkBar" to="/contact" id={contact}>
->>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
                   <p className="navFontST"> Contact</p>
                 </Link>
               </div>
