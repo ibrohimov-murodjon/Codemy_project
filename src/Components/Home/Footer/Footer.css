@@ -17,6 +17,7 @@
   font-weight: 320;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .firstColumn {
   margin-left: 85px;
@@ -351,7 +352,7 @@ a {
   .footerPrgr {
     font-size: 13px;
   }
-    .footer .copyright {
+  .footer .copyright {
     color: #fff;
     padding-top: 3rem;
     text-align: center;
