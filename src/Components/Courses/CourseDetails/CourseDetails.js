@@ -3,6 +3,7 @@ import React from "react";
 import "./CourseDetailsCss.css";
 import CloseIcon from "@material-ui/icons/Close";
 import CheckIcon from "@material-ui/icons/Check";
+import { Link } from "react-router-dom";
 
 const CoursesModal = ({ card_text, setShow, show, img, title }) => {
   const onclose = () => {
@@ -62,9 +63,9 @@ const CoursesModal = ({ card_text, setShow, show, img, title }) => {
                   </li>
                 </ul>
                 <p className="enrollButton">
-                  <a href="#" className="enrollPrimary">
+                  <Link className="enrollPrimary">
                     Enroll Now
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -9,14 +10,22 @@ function Footer() {
           <div className="firstColumn footerRow">
             <div>
               <img src="images/logo.png" alt="" className="img-fluid" />
-              <p className="footerColOneText">
+              <span className="footerColOneText">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 nemo minima qui dolor, iusto iure.
+<<<<<<< HEAD
+              </span>
+              <span className="LearnMore">
+                <Link to="/">Learn More</Link>
+              </span>
+            </p>
+=======
               </p>
               <p className="LearnMore">
                 <a href="#">Learn More</a>
               </p>
             </div>
+>>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
           </div>
           <div className="secondColumn footerRow ">
             <h3 className="footer-heading">
@@ -24,22 +33,22 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Acedemic</a>
+                <Link to="/">Acedemic</Link>
               </li>
               <li>
-                <a href="#">News</a>
+                <Link to="/">News</Link>
               </li>
               <li>
-                <a href="#">Our Interns</a>
+                <Link to="/">Our Interns</Link>
               </li>
               <li>
-                <a href="#">Our Leadership</a>
+                <Link to="/">Our Leadership</Link>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <Link to="/">Careers</Link>
               </li>
               <li>
-                <a href="#">Human Resources</a>
+                <Link to="/">Human Resources</Link>
               </li>
             </ul>
           </div>
@@ -49,22 +58,22 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Math</a>
+                <Link to="/">Math</Link>
               </li>
               <li>
-                <a href="#">Science &amp; Engineering</a>
+                <Link to="/">Science &amp; Engineering</Link>
               </li>
               <li>
-                <a href="#">Arts &amp; Humanities</a>
+                <Link to="/">Arts &amp; Humanities</Link>
               </li>
               <li>
-                <a href="#">Economics &amp; Finance</a>
+                <Link to="/">Economics &amp; Finance</Link>
               </li>
               <li>
-                <a href="#">Business Administration</a>
+                <Link to="/">Business Administration</Link>
               </li>
               <li>
-                <a href="#">Computer Science</a>
+                <Link to="/">Computer Science</Link>
               </li>
             </ul>
           </div>
@@ -74,19 +83,19 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Help Center</a>
+                <Link to="/">Help Center</Link>
               </li>
               <li>
-                <a href="#">Support Community</a>
+                <Link to="/">Support Community</Link>
               </li>
               <li>
-                <a href="#">Press</a>
+                <Link to="/">Press</Link>
               </li>
               <li>
-                <a href="#">Share Your Story</a>
+                <Link to="/">Share Your Story</Link>
               </li>
               <li>
-                <a href="#">Our Supporters</a>
+                <Link to="/">Our Supporters</Link>
               </li>
             </ul>
           </div>
@@ -98,7 +107,7 @@ function Footer() {
               <p className="footerPrgr">
                 Copyright &copy;{new Date().getFullYear()} All rights reserved |
                 This template is made with🤍by{" "}
-                <a href="https://colorlib.com" target="_blank">
+                <a href="https://colorlib.com" target="blank">
                   Colorlib
                 </a>
               </p>
