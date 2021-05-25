@@ -111,13 +111,13 @@ export default function Navbar({ home, about, admission, contact, courses }) {
               }}
             >
               <div className="barDivmarg">
-                <IconButton className="NavIcon">
+                <IconButton id="MyIcon1">
                   <FacebookIcon />
                 </IconButton>
-                <IconButton className="NavIcon">
+                <IconButton id="MyIcon1">
                   <TwitterIcon />
                 </IconButton>
-                <IconButton className="NavIcon">
+                <IconButton id="MyIcon1">
                   <LinkedInIcon />
                 </IconButton>
               </div>
@@ -127,7 +127,7 @@ export default function Navbar({ home, about, admission, contact, courses }) {
                   aria-controls={mobileMenuId}
                   aria-haspopup="true"
                   onClick={handleDrawerOpen}
-                  className="NavIcon"
+                  id="MyIcon1"
                 >
                   <MenuIcon />
                 </IconButton>
