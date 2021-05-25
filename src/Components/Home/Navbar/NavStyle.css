@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-#Nactive {
+.Nactive {
   font-weight: 300;
   color: #51be78;
   font-size: 19px;

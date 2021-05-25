@@ -34,46 +34,20 @@ class Staffs extends React.Component {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };
-<<<<<<< HEAD
-  
 
   componentDidMount() {
-    axios.get('http://localhost:8080/api/staff').then(res => {
-      const allStaffs = res.data;     
-      var b = allStaffs.map((val, index) => {
-        return(
-        <div key={index} className="item">
-        <StaffItem img={val.img_url} name={val.name} surname={val.surname} experience={val.experience} />
-      </div>
-        )
-      })
-      this.setState({...this.state, items: b})
       this.checkSize();
       window.addEventListener("resize", this.checkSize);
       return () => {
         window.removeEventListener("resize", this.checkSize);
       };
-    }, []);
-=======
-  // componentDidMount() {
-  //   this.checkSize();
-  //   window.addEventListener("resize", this.checkSize);
-  //   return () => {
-  //     window.removeEventListener("resize", this.checkSize);
-  //   };
-  // }
+    };
+
   componentDidMount() {
     axios.get("http://localhost:8080/api/staff").then((res) => {
       this.setState({ ...this.state, items: res.data });
-    }, []);
-    ///checkSize
-    this.checkSize();
-    window.addEventListener("resize", this.checkSize);
-    return () => {
-      window.removeEventListener("resize", this.checkSize);
-    };
->>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
-  }
+    }, [])}
+  
 
   render() {
     const options = {

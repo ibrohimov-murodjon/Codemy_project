@@ -26,28 +26,9 @@ class Carousel extends React.Component {
 
   componentDidMount() {
     axios.get("http://localhost:8080/api/carousel").then((res) => {
-<<<<<<< HEAD
-      const fullCarousel = res.data;
-      var a = fullCarousel.map((val, ind) => {
-        return (
-          <div key={ind}>
-            <CarouselItem title={val.title} img={val.img_url} />
-          </div>
-        );
-      });
-      this.setState({ ...this.state, items: a });
-      
-=======
-      // const fullCarousel = res.data;
-      // var a = fullCarousel.map((val, ind) => {
-      //   return (
-      //     <div key={ind}>
-      //       <CarouselItem title={val.title} img={val.img_url} />
-      //     </div>
-      //   );
-      // });
+
+    
       this.setState({ ...this.state, items: res.data });
->>>>>>> 6ca8e9d28c19ded5c3a01326da6491c0d2644a52
     }, []);
   }
 
