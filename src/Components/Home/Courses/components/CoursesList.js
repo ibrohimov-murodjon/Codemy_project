@@ -1,4 +1,4 @@
-import React,  {useState} from "react";
+import React, { useState } from "react";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
@@ -37,9 +37,7 @@ function CoursesList(props) {
           <Typography variant="p" className="course-text">
             {props.card_text}
           </Typography>
-          <Link className="C-card-btn">
-            enroll in this course
-          </Link>
+          <Link className="C-card-btn">enroll in this courses</Link>
         </div>
       </Card>
       <CoursesModal
