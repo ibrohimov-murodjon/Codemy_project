@@ -1,2 +1,2 @@
-## You can see it there
+## You can see it here
 https://react-js-codemy-project.netlify.app/
