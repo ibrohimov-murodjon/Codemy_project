@@ -29,6 +29,9 @@ class Courses extends React.Component {
 
   checkSize = () => {
     this.setState({ ...this.state, size: window.innerWidth });
+    // if (this.state.size < 5000) {
+    //   this.setState({ ...this.state, itemNo: 4 });
+    // }
     if (this.state.size < 2000) {
       this.setState({ ...this.state, itemNo: 3 });
     }
@@ -39,15 +42,14 @@ class Courses extends React.Component {
       this.setState({ ...this.state, itemNo: 1 });
     }
   };
-   
 
   componentDidMount() {
-    
-      this.checkSize();
+    this.checkSize();
     window.addEventListener("resize", this.checkSize);
     return () => {
       window.removeEventListener("resize", this.checkSize);
-    }};
+    };
+  }
   componentWillMount() {
     axios.get("http://localhost:8080/api/kurslar").then((res) => {
       this.setState({ ...this.state, items: res.data });

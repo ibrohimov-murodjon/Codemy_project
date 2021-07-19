@@ -16,7 +16,7 @@ function Footer() {
               </p>
               <h1 className="LearnMore">
                 <Link to="/">Learn More</Link>
-              </h1>             
+              </h1>
             </div>
           </div>
           <div className="secondColumn footerRow ">
@@ -25,7 +25,7 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <Link to="/">Acedemic</Link>
+                <Link to="/">Academic</Link>
               </li>
               <li>
                 <Link to="/">News</Link>
@@ -99,8 +99,8 @@ function Footer() {
               <p className="footerPrgr">
                 Copyright &copy;{new Date().getFullYear()} All rights reserved |
                 This template is made with🤍by{" "}
-                <a href="https://colorlib.com" target="blank">
-                  Colorlib
+                <a href="https://codemy.uz" target="blank">
+                  Codemy Teams.
                 </a>
               </p>
             </div>

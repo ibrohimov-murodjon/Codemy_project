@@ -95,6 +95,10 @@
   width: 373px;
 }
 
+#MyIcon:hover {
+  border-radius: 0 !important;
+}
+
 @media (max-width: 1200px) {
   .barDivmarg {
     width: 180px;

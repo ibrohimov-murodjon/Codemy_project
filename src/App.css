@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -186,7 +185,6 @@
   }
   .staffComponent {
     padding-bottom: 25px;
-    
   }
 }
 
@@ -322,9 +320,7 @@
 
 .aforizmIcon {
   width: 63px;
-  height:63px;
-  /* font-size: 65px !important;
-  width: 60px; */
+  height: 63px;
 }
 
 .afoTitle {
@@ -334,7 +330,6 @@
   margin-bottom: 5px;
   font-size: 1.11rem;
 }
-
 .afoText {
   color: #7697c6;
   font-family: "Mulish", "Roboto", sans-serif;
@@ -478,7 +473,6 @@
   }
   .infoText2 {
     margin-top: 10px;
-
   }
   .infoTitle1 {
     font-size: 30px;

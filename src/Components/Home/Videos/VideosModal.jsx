@@ -1,11 +1,12 @@
-import { Fade, Modal } from "@material-ui/core";
 import React from "react";
+import { Fade, Modal } from "@material-ui/core";
 import "./Videos.css";
 import CloseIcon from "@material-ui/icons/Close";
 const VideosModal = ({ setShow, show, oneD }) => {
   const onclose = () => {
     setShow(false);
   };
+
   // var ondetoStr=oneD.toString()
   return (
     <>
@@ -36,7 +37,7 @@ const VideosModal = ({ setShow, show, oneD }) => {
               allowfullscreen
             ></iframe>
 
-          <div dangerouslySetInnerHTML={{__html: oneD}} />
+            <div dangerouslySetInnerHTML={{ __html: oneD }} />
             <div className="Cres" onClick={onclose}>
               <CloseIcon />
             </div>

@@ -36,18 +36,15 @@ class Staffs extends React.Component {
   };
 
   componentDidMount() {
-      this.checkSize();
-      window.addEventListener("resize", this.checkSize);
-      return () => {
-        window.removeEventListener("resize", this.checkSize);
-      };
-    };
-
-  componentDidMount() {
     axios.get("http://localhost:8080/api/staff").then((res) => {
       this.setState({ ...this.state, items: res.data });
-    }, [])}
-  
+    }, []);
+    this.checkSize();
+    window.addEventListener("resize", this.checkSize);
+    return () => {
+      window.removeEventListener("resize", this.checkSize);
+    };
+  }
 
   render() {
     const options = {
