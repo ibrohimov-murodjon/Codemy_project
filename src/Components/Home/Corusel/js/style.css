@@ -18,7 +18,7 @@
   font-size: 34px;
 }
 
-.owl-prev-carousel {
+.owl-prev {
   font-size: 1.2rem !important;
   position: absolute !important;
   color: rgba(163, 160, 160, 0.8) !important;
@@ -31,7 +31,7 @@
   background: #fff !important;
   line-height: 1;
 }
-.owl-next-carousel {
+.owl-next {
   font-size: 1.2rem !important;
   position: absolute !important;
   color: rgba(163, 160, 160, 0.8) !important;

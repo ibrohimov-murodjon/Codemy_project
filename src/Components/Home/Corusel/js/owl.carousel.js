@@ -3194,7 +3194,7 @@
     navElement: "div",
     navContainer: false,
     navContainerClass: "owl-nav",
-    navClass: ["owl-prev-carousel", "owl-next-carousel"],
+    navClass: ["owl-prev", "owl-next"],
     slideBy: 1,
     dotClass: "owl-dot",
     dotsClass: "owl-dots",
